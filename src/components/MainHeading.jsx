@@ -6,9 +6,9 @@ const MainHeading = () => {
     <Fragment>
         <section className={classes.container}>
         <div className={classes.left}>
-            <h1 style={{textAlign:"left",marginLeft:"15%"}}>LESS CARBS, MORE</h1>
-            <h1 style={{textAlign:"left",marginLeft:"15%"}}> DELICIOUS...</h1>
-            <h4 style={{textAlign:"left",marginLeft:"15%",color:"purple"}}>KETO FRIENDLY • LOW CARB • 100% GLUTEN FREE</h4>
+            <h2 style={{textAlign:"left",marginLeft:"20%"}}>LESS CARBS, MORE</h2>
+            <h2 style={{textAlign:"left",marginLeft:"20%"}}> DELICIOUS...</h2>
+            <p style={{textAlign:"left",marginLeft:"20%"}}>KETO FRIENDLY • LOW CARB • 100% GLUTEN FREE</p>
             <button type='button' className={classes.btn}>order online</button>
         </div>
       </section>

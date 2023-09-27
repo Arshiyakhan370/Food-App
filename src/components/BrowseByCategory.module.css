@@ -1,0 +1,32 @@
+.card1{
+    display: flex;
+   justify-content: center;
+    
+    }
+   .imgTop{
+       height: 12rem;
+       border: 1px solid  #3D081B;
+       border-radius: 7px;
+   }
+   .BrowseByCategory{
+       text-align: left;
+       margin-left: 14%;
+       margin-top: 3%;
+       margin-bottom: 3%;
+       color: #3D081B;
+   }
+   .card2{
+       display: flex;
+   justify-content: center;
+    margin-top: 7%;
+    margin-bottom: 5%;
+    
+   }
+   .card{
+      border :1px solid skyblue;
+      height: 35%;
+   }
+   .card1 h5{
+    color: #3D081B;
+   }
+   
