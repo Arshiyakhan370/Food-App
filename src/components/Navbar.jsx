@@ -1,71 +1,5 @@
-// import React from 'react'
 
-// const Navbar = () => {
-//   return (
-//     <>
-//       <nav className='main-nav'>
-//       <div className='logo'>
-//         <h2>
-//           <span></span>
-//           <span></span>
 
-//         </h2>
-//       </div>
-//       <div className='menu-link'>
-//       <ul>
-//         <li>
-//         <a href='#'>Menu</a>
-//         </li>
-//         <li>
-//         <a href='#'>FAQ</a>
-//         </li>
-//         <li>
-//         <a href='#'>About</a>
-//         </li>
-//         <li>
-//         <a href='#'>Gift cards</a>
-//         </li>
-//         <li>
-//         <a href='#'>Contact</a>
-//         </li>
-//       </ul>
-//      </div>
-//      <div>9370419427</div>
-//      <div className='main-icons'>
-//         <ul className='main-icons-desctop'>
-//         <li><a href=''><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-//         style={{fill: "rgba(0, 0, 0, 1)",transform: "msFilter"}}>
-//         <path d="M10 18a7.952 7.952 0 0 0 4.897-1.688l4.396 4.396 1.414-1.414-4.396-4.396A7.952 7.952
-//         0 0 0 18 10c0-4.411-3.589-8-8-8s-8 3.589-8 8 3.589 8
-//          8 8zm0-14c3.309 0 6 2.691 6 6s-2.691 6-6 6-6-2.691-6-6 2.691-6 6-6z"></path>
-//         </svg></a></li>
-//         <li><a href=''>
-//         <svg xmlns="http://www.w3.org/2000/svg"
-//         width="24" height="24" viewBox="0 0 24 24"
-//         style={{fill: "rgba(0, 0, 0, 1)",transform: "msFilter"}}>
-//         <path d="M7.5 6.5C7.5 8.981 9.519 11 12 11s4.5-2.019 4.5-4.5S14.481 2 12 2 7.5 4.019 7.5
-//         6.5zM20 21h1v-1c0-3.859-3.141-7-7-7h-4c-3.86 0-7 3.141-7 7v1h17z"></path>
-//         </svg>
-//         </a></li>
-//         <li><a href=''>
-//         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-//         style={{fill: "rgba(0, 0, 0, 1)",transform:"msFilter"}}>
-//         <path d="M21 4H3a1 1 0 0 0-1 1v14a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V5a1 1 0 0 0-1-1zm-9 9c-3.309
-//          0-6-2.691-6-6h2c0 2.206 1.794 4 4 4s4-1.794 4-4h2c0 3.309-2.691 6-6 6z"></path>
-//          </svg>
-//         </a></li>
-//         </ul>
-//      </div>
-
-//       </nav>
-//       <section>
-
-//       </section>
-//     </>
-//   )
-// }
-
-// export default Navbar;
 
 import React, { Fragment } from "react";
 import classes from "./Navbar.module.css";
@@ -73,6 +7,9 @@ import classes from "./Navbar.module.css";
 const Navbar = () => {
   return (
     <Fragment>
+    <div className={classes.headBorder}>
+      <p>order now and enjoy instant delivery on orders over $25</p>
+    </div>
       <div
         className={`d-flex justify-content-space-between    ${classes.container}`}
       >
@@ -145,9 +82,7 @@ const Navbar = () => {
         </ul>
      </div>
         </div>
-        <div className={classes.small}>
-          <p>@ Attention:Close this Monday,25th sep . Back on Tuesday with your keto Favorites @</p>
-        </div>
+       
         <div className={classes.line}></div>
        
       

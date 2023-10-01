@@ -1,3 +1,15 @@
+.headBorder{
+    height: 35px;
+    width: 100vw;
+    background-color: #3D081B ;
+    text-align: center;
+    color: azure;
+    justify-content: center;
+}
+.headBorder p {
+   padding: 2px;
+}
+
 .container{
     justify-content: space-between;
     align-items: center;
@@ -19,14 +31,6 @@
 .acoount1{
    justify-content: space-between;
   
-}
-.small{
-    border: 1px solid  #3D081B;
-    height: 30px;
-    width: 100%;
-    background-color: #3D081B;
-    color: white;
-    font-family: 'Courier New', Courier, monospace;
 }
 
 /* .menu-icon {

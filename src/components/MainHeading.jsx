@@ -11,7 +11,9 @@ const MainHeading = () => {
             <p style={{textAlign:"left",marginLeft:"20%"}}>KETO FRIENDLY • LOW CARB • 100% GLUTEN FREE</p>
             <button type='button' className={classes.btn}>order online</button>
         </div>
+        
       </section>
+      
     </Fragment>
   )
 }
