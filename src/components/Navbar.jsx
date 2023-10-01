@@ -3,6 +3,7 @@
 
 import React, { Fragment } from "react";
 import classes from "./Navbar.module.css";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   return (
@@ -13,35 +14,30 @@ const Navbar = () => {
       <div
         className={`d-flex justify-content-space-between    ${classes.container}`}
       >
-        <div>
+      <Link to="/"><div>
           <img src="https://www.ketodelia.ca/cdn/shop/files/Ketodelia_Logo_1b.png?v=1664321580&width=500" />
-        </div>
+        </div></Link>
+        
         <div>
-          <ul className="nav">
-            <li className="nav-item">
-              <a className="nav-link active" aria-current="page" href="#">
-                Menu
-              </a>
+          <ul className={classes.nav}>
+            <li className={classes.navItem} >
+              
+              <Link to="/menu" style={{textDecoration:"none"}}>Menu</Link>
             </li>
-            <li className="nav-item">
-              <a className="nav-link" href="#">
-                FAQ
-              </a>
+
+            <li className={classes.navItem}>
+            <Link to="/faq" style={{textDecoration:"none"}}>FAQ</Link>
             </li>
-            <li className="nav-item">
-              <a className="nav-link active" aria-current="page" href="#">
-                About
-              </a>
+            <li className={classes.navItem}>
+            <Link to="/about" style={{textDecoration:"none"}}>About</Link>
+                
+              
             </li>
-            <li className="nav-item">
-              <a className="nav-link" href="#">
-                Gift cards
-              </a>
+            <li className={classes.navItem}>
+            <Link to="/gift-card" style={{textDecoration:"none"}}>Gift Card</Link>
             </li>
-            <li className="nav-item">
-              <a className="nav-link active" aria-current="page" href="">  
-                Contact
-              </a>
+            <li className={classes.navItem}>
+            <Link to="/contact" style={{textDecoration:"none"}}>Contact</Link>
             </li>
        </ul>
           

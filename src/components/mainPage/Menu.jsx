@@ -182,6 +182,164 @@ const Menu = () => {
   },
   
 ];
+const ketoPizza= [
+   
+  {
+    id: "a1",
+    img: "https://www.ketodelia.ca/cdn/shop/products/ketogardenveggiepizza.jpg?v=1673293248&width=360",
+    title: "Garden Veggie Keto Pizza",
+    description:
+      "Almond crust, organic peppers, mushrooms and tomatoes,...",
+    price: 11.99,
+  },
+  {
+    id: "a2",
+    img: "https://www.ketodelia.ca/cdn/shop/products/ketopepperonipizza.jpg?v=1673297218&width=360",
+    title: "Pepperoni Keto Pizza",
+    description:
+      "Almond crust, halal turkey pepperoni, organic garlic, tomatoes,...",
+    price: 12.99,
+  },
+  {
+    id: "a3",
+    img: "https://www.ketodelia.ca/cdn/shop/products/GrilledChickenKetoPizza.jpg?v=1673029384&width=493",
+    title: "Organic Free Range Grilled Chicken Pizza",
+    description:
+      "Almond crust, organic farm chicken, red pepper, red onion, cheese...",
+    price: 13.99,
+  },
+  {
+    id: "a4",
+    img: "https://www.ketodelia.ca/cdn/shop/products/KetoPestoPizza.jpg?v=1673297490&width=360",
+    title: "Keto Pesto Pizza",
+    description:
+      "Almond crust, organic peppers, onions, goat cheese, mozzarella,....",
+    price: 12.99,
+  },
+  {
+    id: "a5",
+    img: "https://www.ketodelia.ca/cdn/shop/products/GrilledSteakhousePizza.jpg?v=1673297710&width=360",
+    title: "Grass Fed Grilled Steakhouse Keto Pizza",
+    description:
+      "Almond crust, 100% grass fed steak, mozzarella, portobello...",
+    price: 13.99,
+  },
+  {
+    id: "a6",
+    img: "https://www.ketodelia.ca/cdn/shop/products/KetoGrilledSalmonPizza.png?v=1673298254&width=360",
+    title: "Grilled Salmon Keto Pizza",
+    description:
+      "Almond crust, Atlantic salmon, organic red onion, red pepper...",
+    price: 12.99,
+  },
+  {
+    id: "a7",
+    img: "https://www.ketodelia.ca/cdn/shop/products/CheeseFlatbreadKhachapuri.jpg?v=1673298493&width=360",
+    title: "Keto Cheese Flatbread Khachapuri (Georgian Flatbread) - for 2 people",
+    description:"Almond mozzarella pie with 3 cheese stuffing, oven baked with egg...",
+    price: 25.99,
+  },
+];
+const soupPage=[
+  {
+    id: "a1",
+    img: "https://www.ketodelia.ca/cdn/shop/products/ketochickensoup.jpg?v=1673029356",
+    title: "Keto Chicken Soup",
+    description:
+      "Our Keto Chicken Soup is made with homemade organic farmers chicken and cauliflower rice...",
+    price: 15.99,
+  },
+] 
+const ketoBurger= [
+   
+  {
+    id: "a1",
+    img: "https://www.ketodelia.ca/cdn/shop/products/KetoChickenBurger.jpg?v=1673029418&width=360",
+    title: "Keto Chicken Burger",
+    description:
+      "Psyllium almond bun, chicken patty, tomato, onion, lettuce and...",
+    price: 15.99,
+  },
+  {
+    id: "a2",
+    img: "https://www.ketodelia.ca/cdn/shop/products/KetoPortobelloBurger.jpg?v=1669778521&width=360",
+    title: "Portobello Mushroom Keto Burger (Vegetarian)",
+    description:
+      "Psyllium almond bun, portobello mushroom, homemade mayo,...",
+    price: 13.99,
+  },
+  {
+    id: "a3",
+    img: "https://www.ketodelia.ca/cdn/shop/products/BlueCheeseKetoBurger.jpg?v=1673300226&width=360",
+    title: "Local Grass Fed Blue Cheese Burger",
+    description:
+      "Psyllium almond bun, 100% Grass fed beef patty, blue cheese,...",
+    price: 20.99,
+  },
+  {
+    id: "a4",
+    img: "https://www.ketodelia.ca/cdn/shop/products/ClassicKetoGlutenFreeBurger.jpg?v=1673029421&width=360",
+    title: "Local Grass Fed Classic Keto Burger",
+    description:
+      "Psyllium almond bun, 100% grass fed beef patty, homemade mayo,....",
+    price: 19.99,
+  },
+  {
+    id: "a5",
+    img: "https://www.ketodelia.ca/cdn/shop/products/sauteedmushroomsketoburger.jpg?v=1673299556&width=360",
+    title: "Local Grass Fed Sautéed Mushrooms Keto Burger",
+    description:
+      "Psyllium almond bun, 100% grass fed beef patty, homemade mayo,...",
+    price: 25.99,
+  },
+  {
+    id: "a6",
+    img: "https://www.ketodelia.ca/cdn/shop/products/KetoCheeseburger.jpg?v=1673299276&width=360",
+    title: "Local Grass Fed Keto Cheeseburger",
+    description:
+      "Psyllium almond bun, 100% Grass fed beef patty, Swiss or Cheddar...",
+    price: 20.99,
+  },
+  
+];
+const ketoPasta= [
+   
+  {
+    id: "a1",
+    img: "https://www.ketodelia.ca/cdn/shop/products/CreamyMushroomFettuccineAlfredo.jpg?v=1673029366&width=360",
+    title: "Creamy Mushroom Fettuccine Alfredo Shirataki",
+    description:
+      "Alfredo sauce and portobello mushrooms tossed with organic konjac...",
+    price: 19.99,
+  },
+  {
+    id: "a2",
+    img: "https://www.ketodelia.ca/cdn/shop/products/KetoSpaghettiBolognese.jpg?v=1673300950&width=360",
+    title: "Keto Spaghetti Bolognese",
+    description:
+      "Organic konjac noodles tossed with a rich meat sauce - made with...",
+    price: 22.99,
+  },
+  {
+    id: "a3",
+    img: "https://www.ketodelia.ca/cdn/shop/products/GrilledSalmonSpagettiShiratakiPasta.jpg?v=1673300891&width=360",
+    title: "Grilled Salmon Spaghetti Shirataki",
+    description:
+      "Creamy sauce, spinach, roasted garlic, Atlantic salmon pieces, tossed...",
+    price: 25.99,
+  },
+  {
+    id: "a4",
+    img: "https://www.ketodelia.ca/cdn/shop/products/GarlicShrimpZiti.png?v=1673301020&width=360",
+    title: "Konjac Garlic Shrimp Fettuccine",
+    description:
+      "Homemade garlic sauce and jumbo shrimps with fettuccine style....",
+    price: 19.99,
+  },
+  
+  
+];
+
   
   return (
     <Fragment>
@@ -265,6 +423,126 @@ const Menu = () => {
         </div>
         <div className={classes.imageSide}>
           <img src={data2.img} alt="Image" />
+        </div>
+        </div>
+      </div>
+  </div>
+
+      )
+    })
+  }
+    
+    </div>
+    <div className={classes.text}><h3 style={{color:'#3D081B'}}>Soup</h3> </div>
+  <div className={classes.verticalBox}>
+  {
+    soupPage.map((data3)=>{
+      return (
+       
+  <div className={classes.box}>
+    <div className={classes.card}>
+      <div className={classes.horizontalLayout}>
+        <div className={classes.textSide}>
+          <h6>{data3.title}</h6>
+          <p>{data3.description}</p>
+          <span className="review-rating">★★★★★(4)</span>
+          <div>${data3.price}</div>
+          <button type='button' className={classes.btn} >
+              Add to Cart
+            </button>
+        </div>
+        <div className={classes.imageSide}>
+          <img src={data3.img} alt="Image" />
+        </div>
+        </div>
+      </div>
+  </div>
+
+      )
+    })
+  }
+    
+    </div>
+    <div className={classes.text}><h3 style={{color:'#3D081B'}}>Keto Pizzas</h3> </div>
+  <div className={classes.verticalBox}>
+  {
+    ketoPizza.map((data4)=>{
+      return (
+       
+  <div className={classes.box}>
+    <div className={classes.card}>
+      <div className={classes.horizontalLayout}>
+        <div className={classes.textSide}>
+          <h6>{data4.title}</h6>
+          <p>{data4.description}</p>
+          <span className="review-rating">★★★★★(4)</span>
+          <div>${data4.price}</div>
+          <button type='button' className={classes.btn} >
+              Add to Cart
+            </button>
+        </div>
+        <div className={classes.imageSide}>
+          <img src={data4.img} alt="Image" />
+        </div>
+        </div>
+      </div>
+  </div>
+
+      )
+    })
+  }
+    
+    </div>
+    <div className={classes.text}><h3 style={{color:'#3D081B'}}>Keto Burgers</h3> </div>
+  <div className={classes.verticalBox}>
+  {
+    ketoBurger.map((data5)=>{
+      return (
+       
+  <div className={classes.box}>
+    <div className={classes.card}>
+      <div className={classes.horizontalLayout}>
+        <div className={classes.textSide}>
+          <h6>{data5.title}</h6>
+          <p>{data5.description}</p>
+          <span className="review-rating">★★★★★(4)</span>
+          <div>${data5.price}</div>
+          <button type='button' className={classes.btn} >
+              Add to Cart
+            </button>
+        </div>
+        <div className={classes.imageSide}>
+          <img src={data5.img} alt="Image" />
+        </div>
+        </div>
+      </div>
+  </div>
+
+      )
+    })
+  }
+    
+    </div>
+    <div className={classes.text}><h3 style={{color:'#3D081B'}}>Keto Pastas</h3> </div>
+  <div className={classes.verticalBox}>
+  {
+    ketoPasta.map((data6)=>{
+      return (
+       
+  <div className={classes.box}>
+    <div className={classes.card}>
+      <div className={classes.horizontalLayout}>
+        <div className={classes.textSide}>
+          <h6>{data6.title}</h6>
+          <p>{data6.description}</p>
+          <span className="review-rating">★★★★★(4)</span>
+          <div>${data6.price}</div>
+          <button type='button' className={classes.btn} >
+              Add to Cart
+            </button>
+        </div>
+        <div className={classes.imageSide}>
+          <img src={data6.img} alt="Image" />
         </div>
         </div>
       </div>

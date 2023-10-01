@@ -22,6 +22,7 @@ import ForgetPass from './components/ForgetPass';
 import CreateAccount from './components/CreateAccount';
 import CartPage from './components/mainPage/CartPage';
 import Disscount from './components/mainPage/Disscount';
+import { Route, Router, Routes } from 'react-router-dom';
 
 
 
@@ -30,7 +31,28 @@ function App() {
   return (
     <>
     <div className="App">
-      <Navbar/>
+     {/* <Router> */}
+     <Navbar/>
+      <Routes>
+      <Route path="/" element={<MainHeading/>}/>
+      
+      <Route path="/menu" element={<Menu/>} />
+      <Route path="/faq" element={<FaqPage/>} />
+      <Route path="/about" element={<About/>} />
+      <Route path="/gift-card" element={<GiftCard/>} />
+      <Route path="/contact" element={<Contact/>} />
+      <Route path="/:id" element={<SinglePageProduct/>}/>
+      </Routes>
+    {/* //  </Router> */}
+  <ContactPage/>  
+         <Footer/> 
+    </div>
+    </>
+  );
+}
+
+export default App;
+//  {/* <Navbar/> */}
       {/* <MainHeading/>  
       <SmallBorder/> */}
         {/* <MostLoved/> */}
@@ -39,7 +61,7 @@ function App() {
         {/*<HorizontalCard />
         <Map/>
         <StayPage/>  */}
-        <SinglePageProduct/>
+        {/* <SinglePageProduct/> */}
         {/* <Page1/> */}
         {/* <Menu/> */}
          {/* <About/> */}
@@ -55,12 +77,5 @@ function App() {
         {/* <ForgetPass/>  */}
         {/* <CartPage/> */}
         {/* <Disscount/> */}
-      <ContactPage/> 
-        <Footer/>
-
-    </div>
-    </>
-  );
-}
-
-export default App;
+      {/* <ContactPage/>  */}
+        {/* <Footer/> */}

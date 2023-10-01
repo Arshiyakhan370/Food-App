@@ -1,6 +1,7 @@
 import React, { Fragment, useEffect, useState } from "react";
 import classes from "./MostLoved.module.css";
 import images from "./images (1).jpg";
+import { Link } from "react-router-dom";
 
 const MostLoved = () => {
   const mostLoved = [
@@ -54,11 +55,12 @@ const MostLoved = () => {
                   border: "1px solid skyblue",
                 }}
               >
+              <Link to={`/${data.id}`}>
                 <img
                   src={data.img}
                   className={`card-img-top ${classes.imgTop}`}
                   alt="..."
-                />
+                /></Link>
                 <div className="card-body " style={{ textAlign: "left" }}>
                   <h5 className="card-title" style={{ fontSize: "18px" }}>
                     {data.title}
@@ -67,7 +69,7 @@ const MostLoved = () => {
                     {data.description}
                   </p>
                   <span className="review-rating">★★★★★(6)</span>
-                  <div>{data.price}</div>
+                  <div>${data.price}</div>
                 </div>
               </div>
             );

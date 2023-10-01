@@ -44,3 +44,19 @@
     display: none;
     border: 15px solid var(--bg-color);
 } */
+.nav{
+    display: flex;
+    justify-content: space-between;
+    color: #3D081B;
+    /* border:1px solid #3D081B; */
+    width: 150%;
+    margin-left: -24%;
+}
+.navItem{
+    list-style: none;
+    
+    color: #3D081B;
+}
+ul li{
+    text-decoration: none;
+}
