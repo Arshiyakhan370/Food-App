@@ -102,6 +102,92 @@
   .textCard p {
     font-size: 1rem;
   }
+  .btn1 .btn2{
+    display: inline-flex;
+    justify-content: center;
+     align-items: center;
+    width: 110px;
+    height: 100%;
+    
+    margin: 5px;
+    background: hsl(336, 8%, 88%);
+    color: #3D081B;
+    /* font-size: large; */
+    letter-spacing: 1px;
+    text-decoration: none;
+    transform: .6s;
+    /* box-shadow: */
+    border-radius: 15px;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    border: 2px solid #3D081B;
+}
+.btn2:hover{
+    color: #873f59;
+}
+.btn2::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background:#3D081B;
+    width: 0; 
+    height: 100%;
+    z-index: -1;
+    transition: .4s;
+    }
+.btn2:hover::before{
+    width: 100%;
+
+}
+.btn2:nth-child(2){
+    background-color: #3D081B;
+    color:#ac647e;
+}
+.btn2:nth-child(2):hover{
+    color:#853b56;
+}
+.btn2:nth-child(2)::before{
+    background-color: #3D081B;
+}
+.btnplus .btn3{
+  display: inline-flex;
+  justify-content: center;
+   align-items: center;
+  width: 100px;
+  height: 40px;
+  
+  margin: 5px;
+  background: hsl(336, 8%, 88%);
+  color: #3D081B;
+  font-size: large;
+  font-weight: 600;
+  letter-spacing: 1px;
+ text-decoration: none;
+ 
+  transform: .6s;
+  /* box-shadow: */
+  border-radius: 15px;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  border: 2px solid #3D081B;
+}
+
+.mainButton button{
+  background-color:#3D081B;
+  width: 350px;
+  height: 40px;
+  border-radius: 20px;
+  margin-top: 6%;
+  margin-bottom: 6%;
+  border: #d283a0;
+  color: antiquewhite;
+  cursor: pointer;
+}
+
+
   .btn{
    justify-content: space-between;
     width: 120px;

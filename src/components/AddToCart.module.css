@@ -1,0 +1,13 @@
+.cart{
+    display: flex;
+    align-items: center;
+}
+.cart h1{
+    text-align: left;
+    margin-left: 15%;
+    margin-top: 5%;
+}
+.cart p{
+    text-align: right;
+    margin-left: 50%;
+}

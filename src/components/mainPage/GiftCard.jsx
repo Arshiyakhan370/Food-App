@@ -44,104 +44,60 @@ const GiftCard = () => {
             <h2>Card</h2>
             <p>$30.00</p>
             <h6>Denominations</h6>
-            <button
-              style={{
-                color: "#3D081B",
-                padding: "10px  10px",
-                margin:"4px",
-                border: "1px solid #3D081B",
-                cursor: "pointer",
-                borderRadius: "10%  solid #3D081B",
-              }}
-            >
+            <div className={classes.btn1}>
+              <a href="#" className={classes.btn2}>
               CA$30.00
-            </button>
-            <button
-              style={{
-                color: "#3D081B",
-                padding: "10px 10px",
-                margin:"4px",
-                border: "1px solid #3D081B",
-                cursor: "pointer",
-              }}
-            >
-              CA$50.00
-            </button>
-            <button
-              style={{
-                color: "#3D081B",
-                padding: "10px 10px",
-                margin:"4px",
-                border: "1px solid #3D081B",
-                cursor: "pointer",
-              }}
-            >
+              </a>
+              <a href="#" className={classes.btn2}>
               CA$75.00
-            </button>
-            <button
-              style={{
-                color: "#3D081B",
-                padding: "10px 10px",
-                margin:"4px",
-                border: "1px solid #3D081B",
-                cursor: "pointer",
-              }}
-            >
+              </a>
+              <a href="#" className={classes.btn2}>
               CA$100.00
-            </button>
-            <button
-              style={{
-                color: "#3D081B",
-                padding: "10px 10px",
-                margin:"4px",
-                border: "1px solid #3D081B",
-                cursor: "pointer",
-              }}
-            >
+              </a>
+              <a href="#" className={classes.btn2}>
               CA$150.00
-            </button>
-            
+              </a>
+              
+            </div>
             <div>
               <h6>Quantity</h6>
-              <button
-                type="button"
-                style={{
-                  color: "#3D081B",
-                  padding: "10px 20px",
-                  margin: "10px",
-                  border: "1px solid #3D081B",
-                  cursor: "pointer",
-                }}
-              >
-                {" "}
-                - 1 +{" "}
-              </button>
+              <div className={classes.btnplus}>
+                <a href="#" className={classes.btn3}>
+                  {" "}
+                  - 1 +{" "}
+                </a>{" "}
+              </div>
             </div>
-            <button
-              type="button"
-              style={{
-                backgroundColor: "#3D081B",
-                color: "#fff",
-                padding: "10px 20px",
-                margin: "10px",
-                border: "1px solid #3D081B",
-                cursor: "pointer",
-              }}
-            >
-              {" "}
-              Add To Cart
-            </button>
+            <div className={classes.mainButton}>
+              <button type="button"> Add To Cart</button>
+            </div>
           </div>
+            
+          
           <div className={classes.textCard}>
             <p>
             Introducing our versatile Gift Cards, the perfect gift for any food lover in your life. Our Gift Cards can be used towards any menu items at Ketodelia, making it a great gift for birthdays, holidays, or any special occasion.
 
-{/* Our Gift Cards are available in various denominations, so you can choose the amount that best suits your budget. They can also be used for dine-in or take-out, giving the recipient the flexibility to enjoy our delicious Keto-friendly food at their convenience.
+ Our Gift Cards are available in various denominations, so you can choose the amount that best suits your budget. They can also be used for dine-in or take-out, giving the recipient the flexibility to enjoy our delicious Keto-friendly food at their convenience.
 
-Our menu features a wide variety of Keto-friendly options, such as low-carb, high-fat dishes, perfect for those following the ketogenic diet. We have something for everyone, from savory breakfast options to mouthwatering entrees and desserts, all made with the freshest, high-quality ingredients.
+{/* Our menu features a wide variety of Keto-friendly options, such as low-carb, high-fat dishes, perfect for those following the ketogenic diet. We have something for everyone, from savory breakfast options to mouthwatering entrees and desserts, all made with the freshest, high-quality ingredients. */}
 
-Give the gift of delicious, healthy food with our Gift Cards. They are a thoughtful and convenient way to show someone you care. Purchase yours today and share the taste of Keto-friendly food with your loved ones. */}
+{/* Give the gift of delicious, healthy food with our Gift Cards. They are a thoughtful and convenient way to show someone you care. Purchase yours today and share the taste of Keto-friendly food with your loved ones. */} 
             </p>
+            <div>
+              {"  "}
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                style={{ fill: "#3D081B", transform: "msFilter" }}
+              >
+                <path d="M5.5 15a3.51 3.51 0 0 0 2.36-.93l6.26 3.58a3.06 3.06 0 0 0-.12.85 3.53 3.53 0 1 0 1.14-2.57l-6.26-3.58a2.74 2.74 0 0 0 .12-.76l6.15-3.52A3.49 3.49 0 1 0 14 5.5a3.35 3.35 0 0 0 .12.85L8.43 9.6A3.5 3.5 0 1 0 5.5 15zm12 2a1.5 1.5 0 1 1-1.5 1.5 1.5 1.5 0 0 1 1.5-1.5zm0-13A1.5 1.5 0 1 1 16 5.5 1.5 1.5 0 0 1 17.5 4zm-12 6A1.5 1.5 0 1 1 4 11.5 1.5 1.5 0 0 1 5.5 10z"></path>
+              </svg>
+              {"  "}
+              Share
+            </div>
           </div>
         </div>
       </div>

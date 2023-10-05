@@ -4,8 +4,11 @@
 import React, { Fragment } from "react";
 import classes from "./Navbar.module.css";
 import { Link } from "react-router-dom";
+import { useDispatch } from "react-redux";
+import { cartAction } from "../store/CartSlice";
 
 const Navbar = () => {
+   const dispatch= useDispatch()
   return (
     <Fragment>
     <div className={classes.headBorder}>
@@ -68,13 +71,14 @@ const Navbar = () => {
         6.5zM20 21h1v-1c0-3.859-3.141-7-7-7h-4c-3.86 0-7 3.141-7 7v1h17z"></path>
         </svg>
         </a></li>
-        <li className="nav-item me-4"><a href=''>
+        <li className="nav-item me-4"><Link to="/cart" style={{textDecoration:"none"}} onClick={()=>{setTimeout(()=>{dispatch(cartAction.toggleCartReducer(false))},0)}}>
         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
         style={{fill: "rgba(0, 0, 0, 1)",transform:"msFilter"}}>
         <path d="M21 4H3a1 1 0 0 0-1 1v14a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V5a1 1 0 0 0-1-1zm-9 9c-3.309
          0-6-2.691-6-6h2c0 2.206 1.794 4 4 4s4-1.794 4-4h2c0 3.309-2.691 6-6 6z"></path>
          </svg>
-        </a></li>
+         </Link>
+        </li>
         </ul>
      </div>
         </div>

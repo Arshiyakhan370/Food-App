@@ -7,6 +7,7 @@ import StayPage from "./StayPage";
 import ContactPage from "./ContactPage";
 import Footer from "./Footer";
 import Map from "./Map";
+import { Link } from "react-router-dom";
 
 const MainHeading = () => {
   return (
@@ -23,9 +24,11 @@ const MainHeading = () => {
           <p style={{ textAlign: "left", marginLeft: "20%" }}>
             KETO FRIENDLY • LOW CARB • 100% GLUTEN FREE
           </p>
+          <Link to="/menu" style={{textDecoration:"none"}}>
           <button type="button" className={classes.btn}>
             order online
           </button>
+          </Link>
         </div>
       </section>
       <MostLoved/>
@@ -33,8 +36,8 @@ const MainHeading = () => {
       <HorizontalCard/>
       <Map />
       <StayPage />
-      <ContactPage />
-      <Footer />
+      {/* <ContactPage /> */}
+      {/* <Footer /> */}
     </Fragment>
   );
 };
