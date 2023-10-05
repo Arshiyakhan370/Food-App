@@ -71,6 +71,7 @@ const Navbar = () => {
         6.5zM20 21h1v-1c0-3.859-3.141-7-7-7h-4c-3.86 0-7 3.141-7 7v1h17z"></path>
         </svg>
         </a></li>
+        
         <li className="nav-item me-4"><Link to="/cart" style={{textDecoration:"none"}} onClick={()=>{setTimeout(()=>{dispatch(cartAction.toggleCartReducer(false))},0)}}>
         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
         style={{fill: "rgba(0, 0, 0, 1)",transform:"msFilter"}}>

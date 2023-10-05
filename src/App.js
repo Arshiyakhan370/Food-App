@@ -28,24 +28,21 @@ import { cartAction } from "./store/CartSlice";
 
 function App() {
   const dispatch=useDispatch()
-  const cartItem=useSelector((state)=>state.cartSliceReducer.numberOfItemOfCart)
+  const cartItem1=useSelector((state)=>state.cartSliceReducer.cartItem)
   const cartitem2=useSelector((state)=>state.cartSliceReducer.isCartShow)
    
-  const hideCartIcon=()=>{
-    setTimeout(()=>{
-      dispatch(cartAction.toggleCartReducer(false))
-    },0)
+ 
     
-  }
+  
   return (
     <>
       <div className="App">
         {/* <Router> */}
-        <div onClick={hideCartIcon} >
+        <div  >
         {cartitem2 &&  <Link to="/cart" style={{textDecoration:"none"}}  >
         <div className="cartIcon" >
        
-        <div className="noCart">{cartItem}
+        <div className="noCart">{cartItem1.length}
         
         </div>
         <svg
@@ -74,6 +71,7 @@ function App() {
           <Route path="/contact" element={<Contact />} />
           <Route path="/:id" element={<SinglePageProduct />} />
           <Route path="/cart"   element={<AddToCart/>} />
+          <Route path="/feature"  element={<Page1/>}/>
         </Routes>
         {/* //  </Router> */}
         {/* <AddToCart/> */}

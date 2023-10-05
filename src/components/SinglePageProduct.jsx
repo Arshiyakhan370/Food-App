@@ -1,9 +1,12 @@
 import React, { useState } from "react";
 import classes from "./SinglePageProduct.module.css";
 import { Link, useParams } from "react-router-dom";
+import { cartAction } from "../store/CartSlice";
+import { useDispatch } from "react-redux";
 function SinglePageProduct() {
+  const dispatch=useDispatch();
 
-  // const [product,setProduct]=useState([])
+  
   const singleProduct1 = [
     {
       id: "a26",
@@ -760,7 +763,14 @@ function SinglePageProduct() {
               </div>
             </div>
             <div className={classes.mainButton}>
-              <button type="button"> Add To Cart</button>
+            <button type='button' className={classes.btn} onClick={(e)=>{e.stopPropagation() ;e.preventDefault();dispatch(cartAction.addToCartItem({
+            id:product.id,
+            imgUrl:product.img,
+            title:product.title,
+            price:product.price,
+            quantity:1,
+
+          }))}}> Add To Cart</button>
             </div>
           </div>
           <div className={classes.textCard}>

@@ -1,10 +1,15 @@
-import React, { Fragment } from 'react'
+import React, { Fragment, useState } from 'react'
 import classes from "./CreateAccount.module.css"
 const CreateAccount = () => {
+const [name,setName]=useState("");
+const [email,setEmail]=useState("");
+const [password,setPassword]=useState("");
+
   return (
     <Fragment>
         <div className={classes.log}>
     <h1>Create account</h1>
+
     
 <form>
 

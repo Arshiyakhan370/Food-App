@@ -676,7 +676,14 @@ const KetoCakes=[{
           <p>{data1.description}</p>
           <span className="review-rating">★★★★★(4)</span>
           <div>${data1.price}</div>
-          <button type='button' className={classes.btn} onClick={(e)=>{e.stopPropagation() ;e.preventDefault(); dispatch(cartAction.increseNumberOfItem())}}>
+          <button type='button' className={classes.btn} onClick={(e)=>{e.stopPropagation() ;e.preventDefault();dispatch(cartAction.addToCartItem({
+            id:data1.id,
+            imgUrl:data1.img,
+            title:data1.title,
+            price:data1.price,
+            quantity:1,
+
+          }))}}>
               Add to Cart
             </button>
         </div>
@@ -708,7 +715,14 @@ const KetoCakes=[{
           <p>{data.description}</p>
           <span className="review-rating">★★★★★(4)</span>
           <div>${data.price}</div>
-          <button type='button' className={classes.btn} onClick={(e)=>{e.stopPropagation() ;e.preventDefault(); dispatch(cartAction.increseNumberOfItem())}}>
+          <button type='button' className={classes.btn} onClick={(e)=>{e.stopPropagation() ;e.preventDefault();dispatch(cartAction.addToCartItem({
+            id:data.id,
+            imgUrl:data.img,
+            title:data.title,
+            price:data.price,
+            quantity:1,
+
+          }))}}>
               Add to Cart
             </button>
         </div>
@@ -738,7 +752,14 @@ const KetoCakes=[{
           <p>{data2.description}</p>
           <span className="review-rating">★★★★★(4)</span>
           <div>${data2.price}</div>
-          <button type='button' className={classes.btn} onClick={(e)=>{e.stopPropagation() ;e.preventDefault(); dispatch(cartAction.increseNumberOfItem())}} >
+          <button type='button' className={classes.btn} onClick={(e)=>{e.stopPropagation() ;e.preventDefault();dispatch(cartAction.addToCartItem({
+            id:data2.id,
+            imgUrl:data2.img,
+            title:data2.title,
+            price:data2.price,
+            quantity:1,
+
+          }))}}>
               Add to Cart
             </button>
         </div>
@@ -769,7 +790,14 @@ const KetoCakes=[{
           <p>{data3.description}</p>
           <span className="review-rating">★★★★★(4)</span>
           <div>${data3.price}</div>
-          <button type='button' className={classes.btn} onClick={(e)=>{e.stopPropagation() ;e.preventDefault(); dispatch(cartAction.increseNumberOfItem())}}>
+          <button type='button' className={classes.btn} onClick={(e)=>{e.stopPropagation() ;e.preventDefault();dispatch(cartAction.addToCartItem({
+            id:data3.id,
+            imgUrl:data3.img,
+            title:data3.title,
+            price:data3.price,
+            quantity:1,
+
+          }))}}>
               Add to Cart
             </button>
         </div>
@@ -800,7 +828,14 @@ const KetoCakes=[{
           <p>{data4.description}</p>
           <span className="review-rating">★★★★★(4)</span>
           <div>${data4.price}</div>
-          <button type='button' className={classes.btn} onClick={(e)=>{e.stopPropagation() ;e.preventDefault(); dispatch(cartAction.increseNumberOfItem())}}>
+          <button type='button' className={classes.btn} onClick={(e)=>{e.stopPropagation() ;e.preventDefault();dispatch(cartAction.addToCartItem({
+            id:data4.id,
+            imgUrl:data4.img,
+            title:data4.title,
+            price:data4.price,
+            quantity:1,
+
+          }))}}>
               Add to Cart
             </button>
         </div>
@@ -831,7 +866,14 @@ const KetoCakes=[{
           <p>{data5.description}</p>
           <span className="review-rating">★★★★★(4)</span>
           <div>${data5.price}</div>
-          <button type='button' className={classes.btn} onClick={(e)=>{e.stopPropagation() ;e.preventDefault(); dispatch(cartAction.increseNumberOfItem())}}>
+          <button type='button' className={classes.btn} onClick={(e)=>{e.stopPropagation() ;e.preventDefault();dispatch(cartAction.addToCartItem({
+            id:data5.id,
+            imgUrl:data5.img,
+            title:data5.title,
+            price:data5.price,
+            quantity:1,
+
+          }))}}>
               Add to Cart
             </button>
         </div>
@@ -862,7 +904,14 @@ const KetoCakes=[{
           <p>{data6.description}</p>
           <span className="review-rating">★★★★★(4)</span>
           <div>${data6.price}</div>
-          <button type='button' className={classes.btn} onClick={(e)=>{e.stopPropagation() ;e.preventDefault(); dispatch(cartAction.increseNumberOfItem())}}>
+          <button type='button' className={classes.btn} onClick={(e)=>{e.stopPropagation() ;e.preventDefault();dispatch(cartAction.addToCartItem({
+            id:data6.id,
+            imgUrl:data6.img,
+            title:data6.title,
+            price:data6.price,
+            quantity:1,
+
+          }))}}>
               Add to Cart
             </button>
         </div>
@@ -893,7 +942,14 @@ const KetoCakes=[{
           <p>{data7.description}</p>
           <span className="review-rating">★★★★★(4)</span>
           <div>${data7.price}</div>
-          <button type='button' className={classes.btn} >
+          <button type='button' className={classes.btn} onClick={(e)=>{e.stopPropagation() ;e.preventDefault();dispatch(cartAction.addToCartItem({
+            id:data7.id,
+            imgUrl:data7.img,
+            title:data7.title,
+            price:data7.price,
+            quantity:1,
+
+          }))}}>
               Add to Cart
             </button>
         </div>
@@ -924,7 +980,14 @@ const KetoCakes=[{
           <p>{data8.description}</p>
           <span className="review-rating">★★★★★(4)</span>
           <div>${data8.price}</div>
-          <button type='button' className={classes.btn} onClick={(e)=>{e.stopPropagation() ;e.preventDefault(); dispatch(cartAction.increseNumberOfItem())}}>
+          <button type='button' className={classes.btn} onClick={(e)=>{e.stopPropagation() ;e.preventDefault();dispatch(cartAction.addToCartItem({
+            id:data8.id,
+            imgUrl:data8.img,
+            title:data8.title,
+            price:data8.price,
+            quantity:1,
+
+          }))}}>
               Add to Cart
             </button>
         </div>
@@ -955,7 +1018,14 @@ const KetoCakes=[{
           <p>{data9.description}</p>
           <span className="review-rating">★★★★★(4)</span>
           <div>${data9.price}</div>
-          <button type='button' className={classes.btn} onClick={(e)=>{e.stopPropagation() ;e.preventDefault(); dispatch(cartAction.increseNumberOfItem())}}>
+          <button type='button' className={classes.btn} onClick={(e)=>{e.stopPropagation() ;e.preventDefault();dispatch(cartAction.addToCartItem({
+            id:data9.id,
+            imgUrl:data9.img,
+            title:data9.title,
+            price:data9.price,
+            quantity:1,
+
+          }))}}>
               Add to Cart
             </button>
         </div>
@@ -985,7 +1055,14 @@ const KetoCakes=[{
           <p>{data10.description}</p>
           <span className="review-rating">★★★★★(4)</span>
           <div>${data10.price}</div>
-          <button type='button' className={classes.btn} onClick={(e)=>{e.stopPropagation() ;e.preventDefault(); dispatch(cartAction.increseNumberOfItem())}}>
+          <button type='button' className={classes.btn} onClick={(e)=>{e.stopPropagation() ;e.preventDefault();dispatch(cartAction.addToCartItem({
+            id:data10.id,
+            imgUrl:data10.img,
+            title:data10.title,
+            price:data10.price,
+            quantity:1,
+
+          }))}}>
               Add to Cart
             </button>
         </div>
@@ -1015,7 +1092,14 @@ const KetoCakes=[{
           <p>{data11.description}</p>
           <span className="review-rating">★★★★★(4)</span>
           <div>${data11.price}</div>
-          <button type='button' className={classes.btn} onClick={(e)=>{e.stopPropagation() ;e.preventDefault(); dispatch(cartAction.increseNumberOfItem())}}>
+          <button type='button' className={classes.btn} onClick={(e)=>{e.stopPropagation() ;e.preventDefault();dispatch(cartAction.addToCartItem({
+            id:data11.id,
+            imgUrl:data11.img,
+            title:data11.title,
+            price:data11.price,
+            quantity:1,
+
+          }))}}>
               Add to Cart
             </button>
         </div>
@@ -1045,7 +1129,14 @@ const KetoCakes=[{
           <p>{data12.description}</p>
           <span className="review-rating">★★★★★(4)</span>
           <div>${data12.price}</div>
-          <button type='button' className={classes.btn} onClick={(e)=>{e.stopPropagation(); dispatch(cartAction.increseNumberOfItem())}}>
+          <button type='button' className={classes.btn} onClick={(e)=>{e.stopPropagation() ;e.preventDefault();dispatch(cartAction.addToCartItem({
+            id:data12.id,
+            imgUrl:data12.img,
+            title:data12.title,
+            price:data12.price,
+            quantity:1,
+
+          }))}}>
               Add to Cart
             </button>
         </div>

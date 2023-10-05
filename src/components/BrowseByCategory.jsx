@@ -30,9 +30,12 @@ const BrowseByCategory = () => {
     <Fragment>
       <section>
         <h1 className={classes.BrowseByCategory}>Browse by Category</h1>
+        
         <div className={classes.card1}>
+        
           {BrowseByCatData.map((data) => {
             return (
+              
               <div
                 className="card"
                 style={{
@@ -41,7 +44,7 @@ const BrowseByCategory = () => {
                   border: "1px solid skyblue",
                 }}
               >
-              <Link to={`/${data.id}`}>
+              <Link to="/feature">
                 <img
                   src={data.img}
                   className={`card-img-top ${classes.imgTop}`}
