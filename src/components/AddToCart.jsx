@@ -2,6 +2,7 @@ import React, { Fragment, useEffect, useState } from 'react'
 import classes from "./AddToCart.module.css"
 import { useDispatch, useSelector } from 'react-redux'
 import { cartAction } from '../store/CartSlice'
+import { Link } from 'react-router-dom'
 const AddToCart = () => {
   const [isCartEpety,setIsCartEpety]=useState(false)
   const cartItems=useSelector((state)=>state.cartSliceReducer.cartItem)
@@ -22,11 +23,12 @@ useEffect(()=>{
 
   return (
     <Fragment> 
-        <div className={classes.cart}>
-        <h1>Your cart</h1>
-        <p style={{textAlign:"right"}}>Back To Menu</p>
-
-        </div>
+        <div className={classes.cart}> 
+        <h1>Your cart</h1> </div>
+        <Link to="/menu" >
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style={{fill: "rgba(0, 0, 0, 1)",transform: "msFilter",marginLeft:"65%"}}><path d="M12.707 17.293 8.414 13H18v-2H8.414l4.293-4.293-1.414-1.414L4.586 12l6.707 6.707z"></path></svg>Back To Menu 
+</Link>
+       
         <div className={classes.pTag}>
             <p>PRODUCT</p>
             <p style={{marginLeft:"25%"}}>QUANTITY	</p>
@@ -71,9 +73,14 @@ cartItems.map((data)=>{
 })
         }
         <div className={classes.cartBottom}> 
-        <span className={classes.cartBottom4}>order special instruction</span> 
-          <div className={classes.cartBottom1}>
+        <div className={classes.cartBottom4}>Order special instruction 
+       
+        <textarea className={classes.cartBottom1}>
+          
+         
+          </textarea>
           </div>
+          
           <div className={classes.cartBottom2}><h6>subTotal</h6>
           <span>:${
             isCartEpety?"0":subTotal.toFixed(2)

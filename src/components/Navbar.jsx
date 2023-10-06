@@ -4,11 +4,12 @@
 import React, { Fragment } from "react";
 import classes from "./Navbar.module.css";
 import { Link } from "react-router-dom";
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { cartAction } from "../store/CartSlice";
 
 const Navbar = () => {
    const dispatch= useDispatch()
+   const cartItem1=useSelector((state)=>state.cartSliceReducer.cartItem)
   return (
     <Fragment>
     <div className={classes.headBorder}>
@@ -57,20 +58,22 @@ const Navbar = () => {
          6.172 4.291 10.766C11.305 20.707 16.323 21 17.705 21c.202 0 .326-.006.359-.008a.992.992
        0 0 0 .648-.291l1.86-2.171a.997.997 0 0 0-.085-1.39z">
         </path></svg></a></li>
-      <li className="nav-item"><a href=''><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+      <li className="nav-item"><Link to="/magnify"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
         style={{fill: "rgba(0, 0, 0, 1)",transform: "msFilter"}}>
         <path d="M10 18a7.952 7.952 0 0 0 4.897-1.688l4.396 4.396 1.414-1.414-4.396-4.396A7.952 7.952
         0 0 0 18 10c0-4.411-3.589-8-8-8s-8 3.589-8 8 3.589 8
          8 8zm0-14c3.309 0 6 2.691 6 6s-2.691 6-6 6-6-2.691-6-6 2.691-6 6-6z"></path>
-        </svg></a></li>
-        <li className="nav-item"><a href=''>
+        </svg></Link></li>
+        <li className="nav-item"><Link to="/singup">
         <svg xmlns="http://www.w3.org/2000/svg"
         width="24" height="24" viewBox="0 0 24 24"
         style={{fill: "rgba(0, 0, 0, 1)",transform: "msFilter"}}>
         <path d="M7.5 6.5C7.5 8.981 9.519 11 12 11s4.5-2.019 4.5-4.5S14.481 2 12 2 7.5 4.019 7.5
         6.5zM20 21h1v-1c0-3.859-3.141-7-7-7h-4c-3.86 0-7 3.141-7 7v1h17z"></path>
         </svg>
-        </a></li>
+        </Link></li>
+        
+       
         
         <li className="nav-item me-4"><Link to="/cart" style={{textDecoration:"none"}} onClick={()=>{setTimeout(()=>{dispatch(cartAction.toggleCartReducer(false))},0)}}>
         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
@@ -79,8 +82,11 @@ const Navbar = () => {
          0-6-2.691-6-6h2c0 2.206 1.794 4 4 4s4-1.794 4-4h2c0 3.309-2.691 6-6 6z"></path>
          </svg>
          </Link>
+         <div className={classes.noCart}>{cartItem1.length}</div>
         </li>
+      
         </ul>
+        
      </div>
         </div>
        

@@ -25,6 +25,7 @@ import { Link, Route, Router, Routes } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import AddToCart from "./components/AddToCart";
 import { cartAction } from "./store/CartSlice";
+import MagnifyGlass from "./components/MagnifyGlass";
 
 function App() {
   const dispatch=useDispatch()
@@ -72,6 +73,8 @@ function App() {
           <Route path="/:id" element={<SinglePageProduct />} />
           <Route path="/cart"   element={<AddToCart/>} />
           <Route path="/feature"  element={<Page1/>}/>
+          <Route path="/singup"  element={<CreateAccount/>}/>
+          <Route path="/magnify" element={<MagnifyGlass/>}/>
         </Routes>
         {/* //  </Router> */}
         {/* <AddToCart/> */}

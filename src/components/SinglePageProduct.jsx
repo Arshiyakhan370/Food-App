@@ -682,6 +682,7 @@ function SinglePageProduct() {
 
   return (
     <section>
+    <Link to="/menu">
       <div className={classes.back}>
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -693,7 +694,7 @@ function SinglePageProduct() {
           <path d="M12.707 17.293 8.414 13H18v-2H8.414l4.293-4.293-1.414-1.414L4.586 12l6.707 6.707z"></path>
         </svg>{" "}
         Back to Menu
-      </div>
+      </div></Link>
 
       <div className={classes.appContainer}>
         <div className={classes.cardContainer}>
