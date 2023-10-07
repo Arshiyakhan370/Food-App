@@ -175,7 +175,10 @@
   border: 2px solid #3D081B;
 }
 
-.mainButton button{
+.mainButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color:#3D081B;
   width: 350px;
   height: 40px;
@@ -186,6 +189,7 @@
   color: antiquewhite;
   cursor: pointer;
 }
+
 
 
   .btn{

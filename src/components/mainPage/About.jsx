@@ -1,5 +1,6 @@
 import React, { Fragment } from "react";
 import classes from "./About.module.css";
+import { Link } from "react-router-dom";
 
 const About = () => {
   return (
@@ -72,9 +73,9 @@ const About = () => {
         </p>
       </div>
       <div className={classes.btnBoxFormBtn}>
-       <button type="submit" className={classes.btn}>
+       <Link to="/menu"><button type="submit" className={classes.btn}>
          Explore Our Menu
-       </button>
+       </button></Link>
       
      </div>
       <div className={classes.line}></div>

@@ -162,19 +162,20 @@
     text-align: left;
     
   }
-  .btn{
-    /* display:flex; */
-    justify-content:end;
+  .btn1{
+    display:flex;
+    justify-content:center;
     
      width: 260px;
      height: 45px;
-     margin-left: 52%;
+     margin-left: 66%;
      margin-top: 1%;
      /* margin-right:15% ; */
      border-radius: 20px ;
-     /* align-items: center; */
+     align-items: center;
      background-color:  #3D081B;
      color: bisque;
      border: 1px solid rgb(31, 5, 54);
+     text-align: center;
  
  }

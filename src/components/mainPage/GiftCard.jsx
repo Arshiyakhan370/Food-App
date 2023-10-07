@@ -1,11 +1,58 @@
 import React, { Fragment } from 'react'
 import classes from "./GiftCard.module.css"
+import { Link } from 'react-router-dom'
+import { useDispatch } from 'react-redux'
+import { cartAction } from '../../store/CartSlice'
 const GiftCard = () => {
+  const dispatch =useDispatch();
+  const giftCardPage= [
+   
+    {
+      id: "a100",
+      img: "https://cdn.shopify.com/s/files/1/0665/2110/4628/products/ValentinesMiniKetoCheesecake.jpg?v=1675898054&width=360",
+      title: " Mini Heart-Shaped Keto Cheesecake: Perfect for Valentine's Day!",
+      description:
+        "Indulge in this Valentine's Day...",
+      price: 40.99,
+    },
+    {
+      id: "a101",
+      img: "https://cdn.shopify.com/s/files/1/0665/2110/4628/products/OrganicTea.jpg?v=1673029444&width=360",
+      title: "  Organic Tea",
+      description:
+        "Indulge in this Valentine's DayElevate your tea time with our eco-friendly, organic blend....",
+      price: 9.99,
+    },
+{
+ id: "a102",
+      img: "https://cdn.shopify.com/s/files/1/0665/2110/4628/products/Dairy-freeKetoCoffeeCake.jpg?v=1673029345&width=360",
+      title: "Keto Coffee Cake",
+      description:
+        " A delicious and rich coffee cake keto friendly and sugar-free....",
+      price: 11.99,
+    }, 
+{
+id:"a103",
+img:"https://cdn.shopify.com/s/files/1/0665/2110/4628/products/KetoChocolateCake.jpg?v=1673387538&width=360",
+title:"Keto Chocolate Cake 8”",
+description:
+        " The perfect treat for chocoholics, this Keto Chocolate Cake ....",
+      price: 79.99,
+    }, 
+  ];
   return (
 <Fragment>
 <section>
       <div className={classes.appContainer}>
-        <div>back to menu</div>
+      <Link to="/menu"> <div style={{color:"#3D081B",textDecoration:"underline" }}> <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          style={{ fill: "#3D081B", transform: "msFilter",color:"#3D081B",textDecoration:"underline" }}
+        >
+          <path d="M12.707 17.293 8.414 13H18v-2H8.414l4.293-4.293-1.414-1.414L4.586 12l6.707 6.707z"></path>
+        </svg>back to menu</div></Link>
 
         <div className={classes.cardContainer}>
           <div className={classes.imageCard}>
@@ -69,7 +116,7 @@ const GiftCard = () => {
               </div>
             </div>
             <div className={classes.mainButton}>
-              <button type="button"> Add To Cart</button>
+              <div  onClick={()=>dispatch(cartAction.addToCartItem())}> Add To Cart</div>
             </div>
           </div>
             
@@ -104,7 +151,11 @@ const GiftCard = () => {
 
       <h3 className={classes.mostLoved}>You may also like</h3>
       <div className={classes.card1}>
-        <div
+       {
+        giftCardPage.map((data)=>{
+          return (
+            <Link to={`/${data.id}`} style={{textDecoration:'none'}}>
+            <div
           className="card"
           style={{
             width: "15rem",
@@ -113,90 +164,26 @@ const GiftCard = () => {
           }}
         >
           <img
-            src="https://cdn.shopify.com/s/files/1/0665/2110/4628/products/ValentinesMiniKetoCheesecake.jpg?v=1675898054&width=360"
+            src={data.img}
             className={`card-img-top ${classes.imgTop}`}
             alt="..."
           />
           <div className="card-body " style={{ textAlign: "left" }}>
             <h5 className="card-title" style={{ fontSize: "18px" }}>
-            Mini Heart-Shaped Keto Cheesecake: Perfect for Valentine's Day!
+           {data.title}
             </h5>
             <p className="card-text" style={{ fontSize: "12px" }}>
-            Indulge in this Valentine's Day...
+           {data.description}
             </p>
            
-            <div>$40.99</div>
+            <div>${data.price}</div>
             <img src='https://labels.sfo3.digitaloceanspaces.com/files/2727Valentine%20love%20badge1676059375.png' style={{width:"40px",height:"40px"}}/>
           </div>
         </div>
-        <div
-          className="card"
-          style={{
-            width: "15rem",
-            marginRight: "15px",
-            border: "1px solid skyblue",
-          }}
-        >
-          <img
-            src="https://cdn.shopify.com/s/files/1/0665/2110/4628/products/OrganicTea.jpg?v=1673029444&width=360"
-            className={`card-img-top ${classes.imgTop}`}
-            alt="..."
-          />
-          <div className="card-body" style={{ textAlign: "left" }}>
-            <h5 className="card-title" style={{ fontSize: "18px" }}>
-            Organic Tea
-            </h5>
-            <p className="card-text" style={{ fontSize: "12px" }}>
-            Elevate your tea time with our eco-friendly, organic blend.
-            </p>
-            <span className="review-rating">★★★★★(6)</span>
-            <div>$12.99</div>
-          </div>
-        </div>
-        <div
-          className="card"
-          style={{
-            width: "15rem",
-            marginRight: "15px",
-            border: "1px solid skyblue",
-          }}
-        >
-          <img
-            src="https://cdn.shopify.com/s/files/1/0665/2110/4628/products/Dairy-freeKetoCoffeeCake.jpg?v=1673029345&width=360"
-            className={`card-img-top ${classes.imgTop}`}
-            alt="..."
-          />
-          <div className="card-body" style={{ textAlign: "left" }}>
-            <h5 className="card-title" style={{ fontSize: "18px" }}>
-            Keto Coffee Cake 
-            </h5>
-            <p className="card-text" style={{ fontSize: "12px" }}>
-            A delicious and rich coffee cake keto friendly and sugar-free...
-            </p>
-            <span className="review-rating">★★★★★(40)</span>
-            <div>$11.99</div>
-          </div>
-        </div>
-        <div
-          className="card"
-          style={{ width: "15rem", border: "1px solid skyblue" }}
-        >
-          <img
-            src="https://cdn.shopify.com/s/files/1/0665/2110/4628/products/KetoChocolateCake.jpg?v=1673387538&width=360"
-            className={`card-img-top ${classes.imgTop}`}
-            alt="..."
-          />
-          <div className="card-body" style={{ textAlign: "left" }}>
-            <h5 className="card-title" style={{ fontSize: "18px" }}>
-            Keto Chocolate Cake 8”
-            </h5>
-            <p className="card-text" style={{ fontSize: "12px" }}>
-            The perfect treat for chocoholics, this Keto Chocolate Cake ...
-            </p>
-            <span className="review-rating">★★★★★(40)</span>
-            <div>$79.99</div>
-            </div>
-            </div>
+        </Link>
+          )
+        })
+       }
         </div>
         <div className={classes.star}>
         <svg

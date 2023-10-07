@@ -73,8 +73,9 @@ function App() {
           <Route path="/:id" element={<SinglePageProduct />} />
           <Route path="/cart"   element={<AddToCart/>} />
           <Route path="/feature"  element={<Page1/>}/>
-          <Route path="/singup"  element={<CreateAccount/>}/>
+          <Route path="/auth"  element={<CreateAccount/>}/>
           <Route path="/magnify" element={<MagnifyGlass/>}/>
+          <Route path="/forget"  element={<ForgetPass/>}/>
         </Routes>
         {/* //  </Router> */}
         {/* <AddToCart/> */}

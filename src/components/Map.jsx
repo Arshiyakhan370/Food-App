@@ -1,5 +1,6 @@
 import React, { Fragment } from 'react'
 import classes from "./Map.module.css";
+import { Link } from 'react-router-dom';
 
 const Map = () => {
   return (
@@ -26,10 +27,10 @@ const Map = () => {
     <h1>Location & Hours</h1>
    
   <p>Ketodelia</p>
-<h5>3187 Yonge St.</h5>
-<h5>TORONTO, Ontario M4N2K9</h5>
+<h5>3187 Warud.</h5>
+<h5>Amravati,Maharashtra,india</h5>
 <h5>(416) 623-0317</h5>
-<h5>ketodeliatoronto@gmail.com</h5>
+<h5>arshiyakhan379@gmail.com</h5>
 
 <h6>Monday 10:30 a.m. - 9:00 p.m.</h6>
 <h6>Tuesday 10:30 a.m. - 9:00 p.m.</h6>
@@ -39,7 +40,8 @@ const Map = () => {
 <h6>Saturday 11:00 a.m. - 9:00 p.m.</h6>
 <h6>Sunday Closed
 </h6>
- <button type='button' className={classes.btn}>Get Direction</button>
+<Link to="https://www.google.com/maps/@21.1560012,79.075803,15z?entry=ttu">
+ <button type='button' className={classes.btn}>Get Direction</button></Link>
   
 </div>
 </div>

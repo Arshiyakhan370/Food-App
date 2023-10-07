@@ -3,12 +3,14 @@ import classes from "./AddToCart.module.css"
 import { useDispatch, useSelector } from 'react-redux'
 import { cartAction } from '../store/CartSlice'
 import { Link } from 'react-router-dom'
+import { createAction } from '@reduxjs/toolkit'
 const AddToCart = () => {
-  const [isCartEpety,setIsCartEpety]=useState(false)
+ const [isCartEpety,setIsCartEpety]=useState(false)
   const cartItems=useSelector((state)=>state.cartSliceReducer.cartItem)
   const subTotal=useSelector((state)=>state.cartSliceReducer.subTotal)
     const dispatch=useDispatch()
-    
+
+   
 useEffect(()=>{
   dispatch(cartAction.toggleCartReducer(false))
   return ()=>dispatch(cartAction.toggleCartReducer(true))
@@ -110,7 +112,7 @@ cartItems.map((data)=>{
           <div className={classes.box1}>
 
           </div>
-          <button type='button' className={classes.btn}>Check Out</button>
+          <div className={classes.btn1} onClick={()=>dispatch(cartAction.orderSuccessful())}>Check Out</div>
        
      
        

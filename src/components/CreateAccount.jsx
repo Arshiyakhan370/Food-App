@@ -2,6 +2,8 @@ import React, { Fragment, useEffect, useState } from 'react'
 import classes from "./CreateAccount.module.css"
 import { useDispatch } from 'react-redux';
 import { cartAction } from '../store/CartSlice';
+import { Link } from 'react-router-dom';
+import { toast } from 'react-toastify';
 const CreateAccount = () => {
 const [name,setName]=useState("");
 const [email,setEmail]=useState("");
@@ -10,8 +12,13 @@ const [isLogin,setIsLogin]=useState(true);
 const dispatch=useDispatch();
 
  
-let url = "https://identitytoolkit.googleapis.com/v1/accounts:signUp?key=AIzaSyDAhjkYgb-E_dffPRgvmL5KMY0LlYyvV3w";
+let url ;
 const signUpRequest=()=>{
+  if(!isLogin){
+  url="https://identitytoolkit.googleapis.com/v1/accounts:signUp?key=AIzaSyDAhjkYgb-E_dffPRgvmL5KMY0LlYyvV3w";
+  }else{
+ url="https://identitytoolkit.googleapis.com/v1/accounts:signInWithPassword?key=AIzaSyDAhjkYgb-E_dffPRgvmL5KMY0LlYyvV3w"
+  }
   fetch(url, {
     method:"POST",
     body:JSON.stringify({
@@ -36,6 +43,18 @@ const signUpRequest=()=>{
    const submitHandler=(e)=>{
       e.preventDefault();
       signUpRequest()
+      // if(isLogin){
+      toast.success('Your order is successfull!', {
+        position: "top-right",
+        autoClose: 3000,
+
+       } )
+      // }else{
+      //   toast.error('This is an error toast!', {
+      //     position: "top-right",
+      //     autoClose: 3000,
+      //   })
+      // }
    }
 
    useEffect(()=>{
@@ -83,7 +102,7 @@ const signUpRequest=()=>{
            required
          /> 
          
-         <p>Forget yout account</p>
+        {isLogin &&<Link to="/forget"><p style={{color:"#3D081B"}}>Forget yout account</p></Link>}
          <div className={classes.btnBoxFormBtn}>
        <button type="submit" className={classes.btn} >
         {isLogin ? "Log-in":"Register"}

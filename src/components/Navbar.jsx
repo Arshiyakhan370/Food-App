@@ -26,22 +26,22 @@ const Navbar = () => {
           <ul className={classes.nav}>
             <li className={classes.navItem} >
               
-              <Link to="/menu" style={{textDecoration:"none"}}>Menu</Link>
+              <Link to="/menu" style={{textDecoration:"none",color:"#3D081B"}}>Menu</Link>
             </li>
 
             <li className={classes.navItem}>
-            <Link to="/faq" style={{textDecoration:"none"}}>FAQ</Link>
+            <Link to="/faq" style={{textDecoration:"none",color:"#3D081B"}}>FAQ</Link>
             </li>
             <li className={classes.navItem}>
-            <Link to="/about" style={{textDecoration:"none"}}>About</Link>
+            <Link to="/about" style={{textDecoration:"none",color:"#3D081B"}}>About</Link>
                 
               
             </li>
             <li className={classes.navItem}>
-            <Link to="/gift-card" style={{textDecoration:"none"}}>Gift Card</Link>
+            <Link to="/gift-card" style={{textDecoration:"none",color:"#3D081B"}}>Gift Card</Link>
             </li>
             <li className={classes.navItem}>
-            <Link to="/contact" style={{textDecoration:"none"}}>Contact</Link>
+            <Link to="/contact" style={{textDecoration:"none",color:"#3D081B"}}>Contact</Link>
             </li>
        </ul>
           
@@ -50,7 +50,7 @@ const Navbar = () => {
         
         <div className={classes.account}>
       <ul className={` nav  w-100  d-flex   ${classes.acoount1}`}>
-      <li className="nav-item"><a href=""><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+      <li className="nav-item"><a href="tel:9370419427"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
         style={{fill: "rgba(0, 0, 0, 1)",transform: "msFilter"}}>
         <path d="m20.487 17.14-4.065-3.696a1.001 1.001 0 0 0-1.391.043l-2.393
          2.461c-.576-.11-1.734-.471-2.926-1.66-1.192-1.193-1.553-2.354-1.66-2.926l2.459-2.394a1 
@@ -64,7 +64,7 @@ const Navbar = () => {
         0 0 0 18 10c0-4.411-3.589-8-8-8s-8 3.589-8 8 3.589 8
          8 8zm0-14c3.309 0 6 2.691 6 6s-2.691 6-6 6-6-2.691-6-6 2.691-6 6-6z"></path>
         </svg></Link></li>
-        <li className="nav-item"><Link to="/singup">
+        <li className="nav-item"><Link to="/auth">
         <svg xmlns="http://www.w3.org/2000/svg"
         width="24" height="24" viewBox="0 0 24 24"
         style={{fill: "rgba(0, 0, 0, 1)",transform: "msFilter"}}>

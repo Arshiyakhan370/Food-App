@@ -1,4 +1,5 @@
 import { createSlice } from "@reduxjs/toolkit";
+import { ToastContainer, toast } from 'react-toastify';
 
 const initialState = {
  isCartShow: true,
@@ -20,9 +21,17 @@ const cartSlice = createSlice({
      if(isProductExist){
       isProductExist.quantity++;
       state.subTotal+=isProductExist.price;
+      toast.success('This is a success message!', {
+        position: "top-right",
+        autoClose: 3000,
+      })
      }else{
       state.cartItem.push(action.payload)
       state.subTotal+=action.payload.price;
+      toast.success('This is a success message!', {
+        position: "top-right",
+        autoClose: 3000, // Close the toast after 3 seconds
+      });
      }
      
       console.log(state.cartItem)

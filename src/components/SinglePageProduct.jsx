@@ -669,7 +669,46 @@ function SinglePageProduct() {
         "You are just going to love this creamy peanut butter pie with...",
       price: 65.99,
     },
-    
+    {
+      id: "a100",
+      img: "https://cdn.shopify.com/s/files/1/0665/2110/4628/products/ValentinesMiniKetoCheesecake.jpg?v=1675898054&width=360",
+      title: " Mini Heart-Shaped Keto Cheesecake: Perfect for Valentine's Day!",
+      description:
+        "Indulge in this Valentine's Day...",
+      price: 40.99,
+    },
+    {
+      id: "a101",
+      img: "https://cdn.shopify.com/s/files/1/0665/2110/4628/products/OrganicTea.jpg?v=1673029444&width=360",
+      title: "  Organic Tea",
+      description:
+        "Indulge in this Valentine's DayElevate your tea time with our eco-friendly, organic blend....",
+      price: 9.99,
+    },
+{
+ id: "a102",
+      img: "https://cdn.shopify.com/s/files/1/0665/2110/4628/products/Dairy-freeKetoCoffeeCake.jpg?v=1673029345&width=360",
+      title: "Keto Coffee Cake",
+      description:
+        " A delicious and rich coffee cake keto friendly and sugar-free....",
+      price: 11.99,
+    }, 
+{
+id:"a103",
+img:"https://cdn.shopify.com/s/files/1/0665/2110/4628/products/KetoChocolateCake.jpg?v=1673387538&width=360",
+title:"Keto Chocolate Cake 8”",
+description:
+        " The perfect treat for chocoholics, this Keto Chocolate Cake ....",
+      price: 79.99,
+    }, 
+    {
+      id: "a105",
+      img: "https://www.ketodelia.ca/cdn/shop/products/9RH9aAXDbuwgKAweNR1AVCoRShvRrZjB.png?v=1669955876&width=493",
+      title: "  Ketodelia Restaurant Gift Card",
+      description:
+        "Introducing our versatile Gift Cards,...",
+      price: 30.99,
+    },
   ];
    const item = useParams()
    console.log(item.id)
