@@ -2,15 +2,16 @@ import React, { Fragment, useEffect, useState } from 'react'
 import classes from "./CreateAccount.module.css"
 import { useDispatch } from 'react-redux';
 import { cartAction } from '../store/CartSlice';
-import { Link } from 'react-router-dom';
+import { Link, Navigate, unstable_HistoryRouter, useNavigate } from 'react-router-dom';
 import { toast } from 'react-toastify';
 const CreateAccount = () => {
 const [name,setName]=useState("");
 const [email,setEmail]=useState("");
 const [password,setPassword]=useState("");
 const [isLogin,setIsLogin]=useState(true);
-const dispatch=useDispatch();
 
+const dispatch=useDispatch();
+const navigate=useNavigate()
  
 let url ;
 const signUpRequest=()=>{
@@ -30,6 +31,19 @@ const signUpRequest=()=>{
   .then((res)=>{
     res.json().then((result)=>{
     console.log(result)
+    if(!result.error){
+      toast.success("Login successful",{
+        position:'top-right',
+        autoClose:2000,
+      })
+      dispatch(cartAction.saveTokenLocalStorage(result.idToken))
+      navigate("/menu")
+    }else{
+      toast.error(result.error.message,{
+        position:'top-right',
+        autoClose:2000,
+      })
+    }
     })
     
   })
@@ -43,18 +57,7 @@ const signUpRequest=()=>{
    const submitHandler=(e)=>{
       e.preventDefault();
       signUpRequest()
-      // if(isLogin){
-      toast.success('Your order is successfull!', {
-        position: "top-right",
-        autoClose: 3000,
-
-       } )
-      // }else{
-      //   toast.error('This is an error toast!', {
-      //     position: "top-right",
-      //     autoClose: 3000,
-      //   })
-      // }
+      
    }
 
    useEffect(()=>{

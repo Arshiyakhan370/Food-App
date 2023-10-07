@@ -1,6 +1,7 @@
 import React, { Fragment, useState } from 'react'
  import classes from "./ForgetPass.module.css"
 import { Link } from 'react-router-dom'
+import { toast } from 'react-toastify';
 const ForgetPass = () => {
   const [email,setEmail]=useState("");
 
@@ -19,9 +20,16 @@ let url="https://identitytoolkit.googleapis.com/v1/accounts:sendOobCode?key=AIza
     .then((result)=>{
           console.log(result)
           if(result.error){
-            alert(result.error.message)
+            toast.error(result.error.message,{
+              position:'top-right',
+              autoClose:2000,
+
+            })
           }else{
-            alert("Check your Email")
+           toast.success("Check your Email",{
+            position:"top-right",
+            autoClose:2000,
+           })
           }
     })
   })

@@ -4,6 +4,7 @@ import { useDispatch, useSelector } from 'react-redux'
 import { cartAction } from '../store/CartSlice'
 import { Link } from 'react-router-dom'
 import { createAction } from '@reduxjs/toolkit'
+import CartPage from './mainPage/CartPage'
 const AddToCart = () => {
  const [isCartEpety,setIsCartEpety]=useState(false)
   const cartItems=useSelector((state)=>state.cartSliceReducer.cartItem)
@@ -24,7 +25,9 @@ useEffect(()=>{
 
 
   return (
-    <Fragment> 
+    <div>
+    {cartItems.length!==0 ? <div> 
+
         <div className={classes.cart}> 
         <h1>Your cart</h1> </div>
         <Link to="/menu" >
@@ -113,13 +116,9 @@ cartItems.map((data)=>{
 
           </div>
           <div className={classes.btn1} onClick={()=>dispatch(cartAction.orderSuccessful())}>Check Out</div>
-       
-     
-       
-             
-  
-        
-    </Fragment>
+   
+    </div>:<CartPage/>}
+    </div>
   )
 }
 

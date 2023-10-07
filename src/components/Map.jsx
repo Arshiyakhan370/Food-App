@@ -40,7 +40,7 @@ const Map = () => {
 <h6>Saturday 11:00 a.m. - 9:00 p.m.</h6>
 <h6>Sunday Closed
 </h6>
-<Link to="https://www.google.com/maps/@21.1560012,79.075803,15z?entry=ttu">
+<Link to="https://www.google.com/maps/@21.1560012,79.075803,15z?entry=ttu"  style={{textDecoration:"none"}}>
  <button type='button' className={classes.btn}>Get Direction</button></Link>
   
 </div>

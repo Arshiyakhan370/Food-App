@@ -165,7 +165,7 @@
   .btn1{
     display:flex;
     justify-content:center;
-    
+    cursor: pointer;
      width: 260px;
      height: 45px;
      margin-left: 66%;
@@ -179,3 +179,4 @@
      text-align: center;
  
  }
+ 

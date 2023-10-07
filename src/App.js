@@ -76,6 +76,7 @@ function App() {
           <Route path="/auth"  element={<CreateAccount/>}/>
           <Route path="/magnify" element={<MagnifyGlass/>}/>
           <Route path="/forget"  element={<ForgetPass/>}/>
+          
         </Routes>
         {/* //  </Router> */}
         {/* <AddToCart/> */}

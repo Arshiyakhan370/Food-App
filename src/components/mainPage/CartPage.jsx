@@ -1,5 +1,6 @@
 import React, { Fragment } from 'react'
 import classes from "./CartPage.module.css"
+import { Link } from 'react-router-dom'
 const CartPage = () => {
   return (
    <Fragment>
@@ -8,13 +9,12 @@ const CartPage = () => {
     
 <form>
          <div className={classes.btnBoxFormBtn}>
-       <button type="button" className={classes.btn}>
+       <Link to="/menu"><button type="button" className={classes.btn}>
          Back to menu
-       </button>
+       </button></Link>
       
      </div>
-     <h6>Have an account?</h6>
-     <p>Log in to check out faster.</p>
+     
          </form>
          </div>
    </Fragment>
