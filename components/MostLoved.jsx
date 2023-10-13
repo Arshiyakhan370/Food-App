@@ -48,12 +48,12 @@ const MostLoved = () => {
           {mostLoved.map((data) => {
             return (
               <div
-                className="card"
-                style={{
-                  width: "15rem",
-                  marginRight: "15px",
-                  border: "1px solid skyblue",
-                }}
+                className={classes.card}
+                // style={{
+                //   width: "15rem",
+                //   marginRight: "15px",
+                //   border: "1px solid skyblue",
+                // }}
               >
               <Link to={`/${data.id}`}>
                 <img

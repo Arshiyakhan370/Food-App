@@ -5,7 +5,8 @@ const initialState = {
  isCartShow: true,
   cartItem: [],
   subTotal:0,
-  isAuthenticate:!!localStorage.getItem("token")
+  isAuthenticate:!!localStorage.getItem("token"),
+  isShowMenu:false
   
 };
 const cartSlice = createSlice({
@@ -76,8 +77,9 @@ const cartSlice = createSlice({
     saveTokenLocalStorage:(state,action)=>{
       state.isAuthenticate=true
       localStorage.setItem("token",action.payload)
-
-
+    },
+    setShowMenu:(state,action)=>{
+      state.isShowMenu=action.payload;
     }
   },
 });

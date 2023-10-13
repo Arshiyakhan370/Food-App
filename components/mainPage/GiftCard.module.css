@@ -1,6 +1,7 @@
 .card1{
     display: flex;
    justify-content: center;
+   flex-wrap: wrap;
    color: #3D081B;
     
     }
@@ -43,8 +44,9 @@
   .appContainer {
     display: flex;
     justify-content: center;
-    
-    height: 100vh;
+    flex-wrap: wrap;
+    flex-direction: row;
+    /* height: 100vh; */
     margin-top: 5%;
     margin-left: 13%;
     margin-right: 13%;
@@ -52,7 +54,7 @@
   }
   
   .cardContainer {
-    flex: 1;
+    /* flex: 1; */
     background-color: white;
     margin: 10px;
     padding: 20px;
@@ -60,7 +62,7 @@
    width: 600px;
   }
   .cardContainer1 {
-    flex: 1;
+    /* flex: 1; */
     background-color: white;
     margin: 10px;
     padding: 20px;
@@ -141,16 +143,16 @@
     width: 100%;
 
 }
-.btn2:nth-child(2){
+/* .btn2:nth-child(2){
     background-color: #3D081B;
     color:#ac647e;
-}
-.btn2:nth-child(2):hover{
+} */
+/* .btn2:nth-child(2):hover{
     color:#853b56;
-}
-.btn2:nth-child(2)::before{
+} */
+/* .btn2:nth-child(2)::before{
     background-color: #3D081B;
-}
+} */
 .btnplus .btn3{
   display: inline-flex;
   justify-content: center;
@@ -207,4 +209,10 @@
   margin-top: 5%;
   margin-bottom: 3%;
   margin-left: -62%;
+}
+
+@media (max-width: 500px) {
+  .appContainer{
+    flex-direction: column;
+  }
 }

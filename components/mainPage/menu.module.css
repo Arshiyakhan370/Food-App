@@ -1,6 +1,7 @@
 .header {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
   height: 100px;
   background-color: #3d081b;
   color: aliceblue;
@@ -20,40 +21,40 @@
 }
 /* Add this CSS to your stylesheet */
 .verticalBox {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(270px, 1fr));
-  gap: 2rem;
-  justify-content: center;
+  /* display: grid;
+  grid-template-columns: repeat(2, minmax(270px, 1fr)); */
+  display: flex;
+  flex-wrap: wrap;
+  /* gap: 2rem; */
+  justify-content: space-evenly;
   height: auto;
-  width: 70vw;
-  margin-left: 15%;
-  margin-right: 15%;
+  width: 100vw;
+  /* margin-left: 10%; */
+  /* margin-right: 10%; */
 }
 
 .box {
-  flex: 1;
-  justify-content: space-around;
-  position: relative;
+  /* flex: 1; */
+  /* justify-content: space-around; */
+  /* position: relative;
     overflow: hidden;
-    grid-template-rows: 1fr auto;
+    grid-template-rows: 1fr auto; */
   
   padding: 10px;
-  border: 1px solid #ccc;
   background-color: #f9f9f9;
   border: 1px solid rgb(182, 184, 185);
-
+  margin-top: 15px;
   text-align: center;
-  margin-right: 5%;
+  margin-right: 15px;
   border-radius: 12px;
+  max-width: 350px;
 }
-/* .card{
-    flex: 1; 
+.card{
+    /* flex: 2; 
     padding: 20px;
     display: flex;
-    justify-content: space-around;
-    border: 1px solid skyblue;
-   
-  } */
+    justify-content: space-around; */
+  }
 .horizontalLayout {
   display: flex;
   flex-direction: row;
@@ -91,4 +92,10 @@
   border:2px solid #3d081b;
   margin-top: 5%;
   width: 100px;
+}
+
+@media (max-width: 450px) {
+   .verticalBox{
+    margin-left: 10%;
+   }
 }

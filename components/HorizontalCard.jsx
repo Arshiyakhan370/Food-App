@@ -36,7 +36,7 @@ const HorizontalCard = () => {
         And, of course, pleasure is always part of the mix. </p>
 
 
-<p>Based in Toronto, Ketodelia offers 100% gluten-free delicious low-carb cuisine. We take pride in 
+<p className={classes.nextPara}>Based in Toronto, Ketodelia offers 100% gluten-free delicious low-carb cuisine. We take pride in 
 selecting the very best ingredients for each and every meal. The meat we cook comes exclusively
 from local farms so that we can make sure it’s of the finest quality. </p>
     </div>

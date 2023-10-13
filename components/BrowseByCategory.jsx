@@ -41,6 +41,7 @@ const BrowseByCategory = () => {
                 style={{
                   width: "15rem",
                   marginRight: "15px",
+                  marginTop:'15px',
                   border: "1px solid skyblue",
                 }}
               >

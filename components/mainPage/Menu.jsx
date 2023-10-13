@@ -669,7 +669,7 @@ const KetoCakes=[{
     menuPage1.map((data1)=>{
       return (
         <Link to={`/${data1.id}`} style={{textDecoration:"none"}}>
-        <div className={classes.box}>
+        <div key={data1.id} className={classes.box}>
     <div className={classes.card}>
       <div className={classes.horizontalLayout}>
         <div className={classes.textSide}>

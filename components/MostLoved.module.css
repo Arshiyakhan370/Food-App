@@ -1,6 +1,7 @@
 .card1{
  display: flex;
 justify-content: center;
+flex-wrap: wrap;
 color: #3D081B;
  
  }
@@ -24,6 +25,7 @@ color: #3D081B;
     color: #3D081B;
 }
 .card2{
+   
     display: flex;
 justify-content: center;
  margin-top: 7%;
@@ -41,4 +43,13 @@ justify-content: center;
 .card2 span{
     color: grey;
  }
+
+ .card{
+width: 15rem;
+    margin-right: 15px;
+    margin-top: 15px;
+    border: 1px solid skyblue;
+    padding: 5px;
+ }
  
+

@@ -1,5 +1,5 @@
 .container{
-   
+   border: 1px solid red;
     width: 100vw;
     height: 90vh;
     display: flex;
@@ -30,3 +30,5 @@
     border: 1px solid rgb(31, 5, 54);
 
 }
+
+

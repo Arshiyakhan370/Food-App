@@ -90,4 +90,29 @@ ul li{
     border:1px solid white;
     
   }
-  
+  .burgerMenu{
+    display: none;
+    z-index: 3;
+}
+
+.menues{
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    width: 50vw;
+    height: 100vh;
+    background: #df9191;
+    z-index: 222;
+}
+
+  @media (max-width: 870px) {
+    .burgerMenu{
+        display: block;
+    }
+    .acoount1{
+        display: none !important;
+    }
+    .nav{
+        display: none !important;
+    }
+ }
