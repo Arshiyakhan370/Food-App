@@ -134,10 +134,13 @@ description:
             <div
           className="card"
           style={{
-            width: "15rem",
+            width: "11rem",
+            height:"19rem",
             marginRight: "15px",
-            border: "1px solid skyblue",
-            marginTop:'15px'
+            // border: "1px solid skyblue",
+            boxShadow:  "0 4px 8px rgba(0, 0, 0, 0.2)",
+            marginTop:'15px',
+            
           }}
         >
           <img
@@ -146,10 +149,10 @@ description:
             alt="..."
           />
           <div className="card-body " style={{ textAlign: "left" }}>
-            <h5 className="card-title" style={{ fontSize: "18px" }}>
+            <h5 className="card-title" style={{ fontSize: "10px" }}>
            {data.title}
             </h5>
-            <p className="card-text" style={{ fontSize: "12px" }}>
+            <p className="card-text" style={{ fontSize: "9px" }}>
            {data.description}
             </p>
            

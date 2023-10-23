@@ -9,11 +9,10 @@ const Map = () => {
     <div className={classes.appContainer}>
 
     <div className={classes.cardContainer}>
-    <div className={classes.textCard1}>
-     <iframe
+    <iframe
       src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29703.013276664344!2d78.2468601508266!3d21.47335567564409!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bd5ca942d208c47%3A0x1096416ee5560128!2sWarud%2C%20Maharashtra%20444906!5e0!3m2!1sen!2sin!4v1695728993760!5m2!1sen!2sin"
-      width="500"
-      height="600"
+      
+      
       className={classes.mappp}
       style={{ border: '0' }}
       allowFullScreen=""
@@ -21,7 +20,7 @@ const Map = () => {
       referrerPolicy="no-referrer-when-downgrade"
       title="Google Map"
     ></iframe>
-</div>
+
 </div>
 <div className={classes.cardContainer1}>
 <div className={classes.textCard}>

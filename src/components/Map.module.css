@@ -1,15 +1,16 @@
 .appContainer {
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap-reverse;
-    width: 74%;
-    height: 70%;
-    border: 1px solid #3D081B;;
-    margin-top: 6%;
-    margin-bottom: 4%;
-    margin-left: 13%;
-    border-radius: 15PX;
-    border-bottom:10px solid  #3D081B;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  /* width: 74%; */
+  height: 40%;
+  border: 1px solid #3D081B;;
+  margin-top: 6%;
+  margin-bottom: 4%;
+  margin-left: 13%;
+  margin-right: 13%;
+  border-radius: 15PX;
+  border-bottom:10px solid  #3D081B;
    
   }
   
@@ -19,6 +20,13 @@
    
     
   }
+.cardContainer iframe{
+  height: 100%;
+  width: 100%;
+  border-bottom-left-radius: 15px;
+  border-top-left-radius: 15px;
+}
+
   .cardContainer1{
     flex: 1;
     font-size: x-small;
@@ -31,7 +39,7 @@
   
   .textCard {
     margin-left: 15%;
-    text-align: left;
+    text-align: left ;
     margin-top: 15%;
     font-size: 1.5rem;
     color: #3D081B;
@@ -74,7 +82,7 @@
     justify-content: space-evenly;
     flex-wrap: wrap;
     width: 74%;
-    height: 170px;
+    height: 40%;
     margin-top: 6%;
     margin-bottom: 4%;
     margin-left: 13%;
@@ -94,23 +102,29 @@
     border-bottom:10px solid  #3D081B;
     border-radius: 15PX;
      margin-left: 1%;
+     /* margin-bottom: 1%; */
   }
 
-  @media (max-width: 1020px) {
+  /* @media (max-width: 1020px) {
    .timing{
     display: none;
 
    }
    .appContainer{
-    flex-direction: column-reverse;
-    margin-top: 15px;
+     /* flex-direction: column-reverse;  
+     margin-top: 15px;
    }
   }
 
   @media (max-width: 710px) {
    .mappp{
-    /* display: none; */
-    width:100%;
+     display: none; 
+     width:100%;
     height: 100%;
    }
-  }
+  } 
+  @media (max-width: 900px) {
+    .text .nextPara {
+      display: none;
+    }
+  } */

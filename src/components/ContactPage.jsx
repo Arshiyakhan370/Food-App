@@ -9,40 +9,28 @@ const ContactPage = () => {
         <div className={classes.cardsContainer}>
           <div>
             <h6>Contact us</h6>
-            <p>Ketodelia</p>
-            <p>3187 Yonge St.</p>
-            <p>TORONTO, Ontario M4N2K9</p>
-            <p> (416) 623-0317</p>
+            <div>Ketodelia</div>
+            <div>3187 Yonge St.</div>
+            <div>TORONTO, Ontario M4N2K9</div>
+            <div> (416) 623-0317</div>
           </div>
           <div className={classes.quikLink}>
             <h6>Quick Links</h6>
-            <ul>
-              <p><li className="nav-item">
-                <a className="nav-link" href="#">About us </a></li></p>
-              <p><li className="nav-item">
-                <a className="nav-link" href="#">Keto Bakery </a></li></p>
-              <p><li className="nav-item">
-                <a className="nav-link" href="#">Gift Cards</a></li></p>
-              <p><li className="nav-item">
-                <a className="nav-link" href="#">Contact </a></li></p>
-              <p><li className="nav-item">
-                <a className="nav-link" href="#">Keto Blog </a></li></p>
-            </ul>
+            
+              <div>About us</div>
+              <div>Keto Bakery</div>
+              <div>Gift Cards</div>
+              <div>Contact </div>
+              <div>Keto Blog </div>
+            
           </div>
           <div  className={classes.quikLink}>
             <h6>Information</h6>
-            <ul>
-              <p><li className="nav-item">
-                <a className="nav-link" href="#">What Our Guests Are Saying </a></li></p>
-              <p><li className="nav-item">
-                <a className="nav-link" href="#">Return Policy </a></li></p>
-              <p><li className="nav-item">
-                <a className="nav-link" href="#">Shipping Policy</a></li></p>
-              <p><li className="nav-item">
-                <a className="nav-link" href="#">Gift Cards </a></li></p>
-              <p><li className="nav-item">
-                <a className="nav-link" href="#">WTerms of Service </a></li></p>
-            </ul>
+            <div>What Our Guests Are Saying </div>
+              <div>Return Policy </div>
+              <div>Shipping Policy</div>
+              <div>Gift Cards </div>
+              <div>Terms of Service </div>
           </div>
         </div>
         <div className={classes.parentIcon}>

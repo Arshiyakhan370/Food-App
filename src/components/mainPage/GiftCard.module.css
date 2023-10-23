@@ -3,17 +3,22 @@
    justify-content: center;
    flex-wrap: wrap;
    color: #3D081B;
+   font-size: 10px;
+   /* height: 20rem;
+   width: 9rem; */
     
     }
     .card1 h5{
        color: #3D081B;
+       font-size: 10px;
     }
     .card1 p{
        color: #3D081B;
+       font-size: 10px;
     }
    .imgTop{
-       height: 12rem;
-       border: 1px solid  #3D081B;
+       height: 9rem;
+       /* border: 1px solid  #3D081B; */
        border-radius: 7px;
    }
    .mostLoved{
@@ -48,43 +53,48 @@
     flex-direction: row;
     /* height: 100vh; */
     margin-top: 5%;
-    margin-left: 13%;
-    margin-right: 13%;
+    margin-left: 5%;
+    margin-right: 5%;
     margin-bottom: 5%;
   }
   
   .cardContainer {
-    /* flex: 1; */
+    flex: 1;
     background-color: white;
     margin: 10px;
     padding: 20px;
     /* border:1px solid #3D081B; */
-   width: 600px;
+   width: 300px;
+   height: 300px;
+   margin-bottom: 3%;
+   
   }
   .cardContainer1 {
-    /* flex: 1; */
+    flex: 1;
     background-color: white;
     margin: 10px;
     padding: 20px;
     box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
-    width: 700px;
+    width: 280px;
+    height: 400px;
   }
   
   .cardImage {
     width: 100%;
-    height: auto;
+    height: 100%;
     border-radius: 10px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
   }
   .smallbox{
     display: flex;
     justify-content: space-around;
     padding: 4px;
-    max-width: 100%;
+    width: 100%;
     height: 120%;
    
   }
   .cardImage1 {
-    max-width: 30%;
+    width: 30%;
     height: 30%;
     
     border:1px solid #3D081B;
@@ -95,10 +105,11 @@
   .textCard {
     text-align: left;
     color: #3D081B;
+    font-size: 10px;
   }
   
   .textCard h2 {
-    font-size: 1.5rem;
+    font-size: 1rem;
   }
   
   .textCard p {
@@ -108,7 +119,7 @@
     display: inline-flex;
     justify-content: center;
      align-items: center;
-    width: 110px;
+    width: 80px;
     height: 100%;
     
     margin: 5px;
@@ -158,7 +169,7 @@
   justify-content: center;
    align-items: center;
   width: 100px;
-  height: 40px;
+  height: 35px;
   
   margin: 5px;
   background: hsl(336, 8%, 88%);
@@ -182,8 +193,8 @@
   justify-content: center;
   align-items: center;
   background-color:#3D081B;
-  width: 350px;
-  height: 40px;
+  width: 300px;
+  height: 35px;
   border-radius: 20px;
   margin-top: 6%;
   margin-bottom: 6%;
@@ -196,7 +207,7 @@
 
   .btn{
    justify-content: space-between;
-    width: 120px;
+    width: 110px;
     height: 45px;
     border-radius: 20px solid #3D081B;
     align-items: center;

@@ -25,10 +25,11 @@
   grid-template-columns: repeat(2, minmax(270px, 1fr)); */
   display: flex;
   flex-wrap: wrap;
+  
   /* gap: 2rem; */
   justify-content: space-evenly;
-  height: auto;
-  width: 100vw;
+  /* height: auto;
+  width: 100vw; */
   /* margin-left: 10%; */
   /* margin-right: 10%; */
 }
@@ -39,10 +40,12 @@
   /* position: relative;
     overflow: hidden;
     grid-template-rows: 1fr auto; */
-  
+  height: 170px;
+  width: 400px;
   padding: 10px;
   background-color: #f9f9f9;
-  border: 1px solid rgb(182, 184, 185);
+  /* border: 1px solid rgb(182, 184, 185); */
+  box-shadow:  0 4px 8px rgba(0, 0, 0, 0.2);
   margin-top: 15px;
   text-align: center;
   margin-right: 15px;
@@ -50,6 +53,7 @@
   max-width: 350px;
 }
 .card{
+  
     /* flex: 2; 
     padding: 20px;
     display: flex;
@@ -59,20 +63,22 @@
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  border: 1px solid skyblue;
+  /* border: 1px solid skyblue; */
   border-radius: 12px;
+ 
   /* padding: 20px; */
 }
 
-.box h2 {
+.box h6 {
   margin-top: 0;
+  font-size: x-small;
 }
 .textSide {
   margin-left: 10px;
   margin-right: 15px;
   margin-top: 10px;
   text-align: left;
-  font-size: small;
+  font-size: x-small;
   color: #3d081b;
   flex: 1;
 }
@@ -82,7 +88,7 @@
 
 .box .horizontalLayout .imageSide img {
   width: 120px;
-  height: 180px;
+  height: 150px;
   border-top-right-radius: 12px;
   border-bottom-right-radius: 12px;
 }

@@ -36,16 +36,14 @@ const BrowseByCategory = () => {
           {BrowseByCatData.map((data) => {
             return (
               
-              <div
-                className="card"
-                style={{
-                  width: "15rem",
-                  marginRight: "15px",
-                  marginTop:'15px',
-                  border: "1px solid skyblue",
-                }}
+              <div key={data.id}
+                className={classes.card}
+               
+                 
+              
               >
               <Link to="/feature">
+              
                 <img
                   src={data.img}
                   className={`card-img-top ${classes.imgTop}`}

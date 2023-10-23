@@ -1,13 +1,13 @@
 .cardsContainer {
   display: flex;
   justify-content: space-around;
-  padding: 16px;
-  margin: 16px;
+  padding: 20px;
+  margin: 20px;
   border-radius: 4px;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
   text-align: left;
-  margin-left: 20%;
-  margin-right: 18%;
+  margin-left: 15%;
+  margin-right: 15%;
   font-size: small;
 }
 .parentIcon {
@@ -19,7 +19,7 @@
 .icon {
   display: flex;
   justify-content: space-between;
-  width: 10%;
+  /* width: 10%; */
 }
 
 @media (max-width: 726px) {

@@ -10,7 +10,7 @@ const MostLoved = () => {
       img: "https://www.ketodelia.ca/cdn/shop/products/cauliflowerbites.jpg?v=1673029354&width=533",
       title: "Air Fried Keto Buffalo Cauliflower Bites",
       description:
-        "Lightly battered organic cauliflower tossed in homemade buffalo sauce with your choice ...",
+        "Lightly battered organic cauliflower  ...",
       price: 12.99,
     },
     {
@@ -18,7 +18,7 @@ const MostLoved = () => {
       img: "https://www.ketodelia.ca/cdn/shop/products/ketochickensoup.jpg?v=1673029356",
       title: "Keto Chicken Soup",
       description:
-        "Our Keto Chicken Soup is made with homemade organic farmers chicken and cauliflower rice...",
+        "Our Keto Chicken Soup is made with homemade ...",
       price: 15.99,
     },
     {
@@ -26,7 +26,7 @@ const MostLoved = () => {
       img: "https://www.ketodelia.ca/cdn/shop/products/NoSugarCheesecake.jpg?v=1673029341&width=360",
       title: "Keto Cheesecake",
       description:
-        "A classic cheesecake, made Keto-friendly. Deliciously rich and creamy with a crumbly almond ...",
+        "A classic cheesecake, made Keto-friendly ...",
       price: 12.99,
     },
     {
@@ -34,7 +34,7 @@ const MostLoved = () => {
       img: "https://www.ketodelia.ca/cdn/shop/products/KetoBagelsCheddarJalapeno.jpg?v=1679087800&width=360",
       title: "Keto Bagel Cheddar Jalapeno - 4 pack",
       description:
-        "Our cheddar jalapeno bagels are made of almond flour, mozzarella...",
+        "Our cheddar jalapeno bagels are made ...",
       price: 23.99,
     },
   ];
@@ -47,13 +47,9 @@ const MostLoved = () => {
           {/* cart start */}
           {mostLoved.map((data) => {
             return (
-              <div
+              <div key={data.id}
                 className={classes.card}
-                // style={{
-                //   width: "15rem",
-                //   marginRight: "15px",
-                //   border: "1px solid skyblue",
-                // }}
+                
               >
               <Link to={`/${data.id}`}>
                 <img
@@ -62,10 +58,10 @@ const MostLoved = () => {
                   alt="..."
                 /></Link>
                 <div className="card-body " style={{ textAlign: "left" }}>
-                  <h5 className="card-title" style={{ fontSize: "18px" }}>
+                  <h6 className="card-title" style={{ fontSize: "13px" }}>
                     {data.title}
-                  </h5>
-                  <p className="card-text" style={{ fontSize: "12px" }}>
+                  </h6>
+                  <p className="card-text" style={{ fontSize: "10px" }}>
                     {data.description}
                   </p>
                   <span className="review-rating">★★★★★(6)</span>

@@ -13,7 +13,7 @@ function SinglePageProduct() {
       img: "https://www.ketodelia.ca/cdn/shop/products/KetoGrilledSalmonPizza.png?v=1673298254&width=360",
       title: "Grilled Salmon Keto Pizza",
       description:
-        "Almond crust, Atlantic salmon, organic red onion, red pepper...",
+        "Almond crust, Atlantic salmon, organic ...",
       price: 12.99,
     },
     {
@@ -21,7 +21,7 @@ function SinglePageProduct() {
       img: "https://www.ketodelia.ca/cdn/shop/products/ketochickensoup.jpg?v=1673029356",
       title: "Keto Chicken Soup",
       description:
-        "Our Keto Chicken Soup is made with homemade organic farmers chicken and cauliflower rice...",
+        "Our Keto Chicken Soup is made with homemade e...",
       price: 15.99,
     },
     {
@@ -29,7 +29,7 @@ function SinglePageProduct() {
       img: "https://cdn.shopify.com/s/files/1/0665/2110/4628/products/KetoChickenTenders.jpg?v=1673029425&width=360",
       title: "Air Fried Keto Chicken Tenders",
       description:
-        "Air fried chicken tenderloins tossed in almond flour and spices with your choice of side and keto dressing. ...",
+        "Air fried chicken tenderloins tossed in almond . ...",
       price: 23.99,
     },
     {
@@ -37,7 +37,7 @@ function SinglePageProduct() {
       img: "https://www.ketodelia.ca/cdn/shop/products/KetoBagelsCheddarJalapeno.jpg?v=1679087800&width=360",
       title: "Keto Bagel Cheddar Jalapeno - 4 pack",
       description:
-        "Our cheddar jalapeno bagels are made of almond flour, mozzarella...",
+        "Our cheddar jalapeno bagels are made of ...",
       price: 23.99,
     },
     
@@ -869,9 +869,13 @@ description:
             <div
               className="card"
               style={{
-                width: "15rem",
+                width: "11rem",
+                height:"18rem",
                 marginRight: "15px",
-                border: "1px solid skyblue",
+                // border: "1px solid skyblue",
+                boxShadow: "0 4px 8px rgba(0, 0, 0, 0.2)",
+                fontSize: "10px",
+                padding: '4px',
               }}
             >
             <Link to={`/${data.id}`} style={{textDecoration:"none"}}>
@@ -882,10 +886,10 @@ description:
               />
               </Link>
               <div className="card-body " style={{ textAlign: "left" }}>
-                <h5 className="card-title" style={{ fontSize: "18px" }}>
+                <h5 className="card-title" >
                   {data.title}
                 </h5>
-                <p className="card-text" style={{ fontSize: "12px" }}>
+                <p className="card-text" >
                   {data.description}
                 </p>
                 <span className="review-rating">★★★★★(4)</span>
@@ -983,9 +987,9 @@ description:
         <div
           className="card"
           style={{
-            width: "15rem",
+            width: "10rem",
             marginRight: "15px",
-            border: "1px solid grey",
+            // border: "1px solid grey",
             boxShadow: "0 4px 8px rgba(0, 0, 0, 0.2)",
           }}
         >
@@ -1001,9 +1005,10 @@ description:
         <div
           className="card"
           style={{
-            width: "15rem",
+            width: "10rem",
             marginRight: "15px",
-            border: "1px solid grey",
+            // border: "1px solid grey",
+            boxShadow: "0 4px 8px rgba(0, 0, 0, 0.2)",
           }}
         >
           <div className="card-body " style={{ textAlign: "left" }}>
@@ -1019,9 +1024,10 @@ description:
         <div
           className="card"
           style={{
-            width: "15rem",
+            width: "10rem",
             marginRight: "15px",
-            border: "1px solid grey",
+            // border: "1px solid grey",
+            boxShadow: "0 4px 8px rgba(0, 0, 0, 0.2)",
           }}
         >
           <div className="card-body " style={{ textAlign: "left" }}>
@@ -1037,9 +1043,10 @@ description:
         <div
           className="card"
           style={{
-            width: "15rem",
+            width: "10rem",
             marginRight: "15px",
-            border: "1px solid grey",
+            // border: "1px solid grey",
+            boxShadow: "0 4px 8px rgba(0, 0, 0, 0.2)",
           }}
         >
           <div className="card-body " style={{ textAlign: "left" }}>
@@ -1048,10 +1055,7 @@ description:
 
             <p className="card-text" style={{ fontSize: "12px" }}>
               Thank you Ketodelia for the your Air Fried Buffalo Cauliflower &
-              Blue cheese dip. It could have been better crispier, however
-              delicious. Next time I will reheat it in my Air Fryer. Even though
-              we're not cauliflower lovers, we loved it & enjoyed it
-              tremendously. Looking forward to my next order.
+              Blue cheese dip. 
             </p>
           </div>
         </div>

@@ -623,7 +623,7 @@ const KetoCakes=[{
 },
 {
   id: "a71",
-  img: "hhttps://www.ketodelia.ca/cdn/shop/products/KetoChocolateCake.jpg?v=1673387538&width=360",
+  img: "https://www.ketodelia.ca/cdn/shop/products/KetoChocolateCake.jpg?v=1673387538&width=360",
   title: "Keto Chocolate Cake 8”" ,
   description:
     "The perfect treat for chocoholics, this Keto Chocolate Cake has an...",

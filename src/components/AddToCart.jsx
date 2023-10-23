@@ -10,22 +10,25 @@ const AddToCart = () => {
   const cartItems=useSelector((state)=>state.cartSliceReducer.cartItem)
   const subTotal=useSelector((state)=>state.cartSliceReducer.subTotal)
     const dispatch=useDispatch()
-
+console .log("line13")
    
 useEffect(()=>{
   dispatch(cartAction.toggleCartReducer(false))
   return ()=>dispatch(cartAction.toggleCartReducer(true))
 },[])
  useEffect(()=>{
+  console.log("lineno 20");
   if (cartItems.length===0){
     setIsCartEpety(true)
+    console.log(isCartEpety)
   }
  },[cartItems])
 
 
 
   return (
-    <div>
+    
+    <div>{console.log("line 31")}
     {cartItems.length!==0 ? <div> 
 
         <div className={classes.cart}> 
