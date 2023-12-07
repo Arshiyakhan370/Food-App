@@ -1,7 +1,7 @@
 .header {
   display: flex;
   justify-content: center;
-  flex-wrap: wrap;
+  flex-wrap: wrap; 
   height: 100px;
   background-color: #3d081b;
   color: aliceblue;
@@ -16,7 +16,7 @@
   margin-left: 15%;
 }
 .text h3{
-  margin-top: 2%;
+  margin-top: 2%; 
   margin-bottom: 2%;
 }
 /* Add this CSS to your stylesheet */
@@ -31,7 +31,7 @@
   /* height: auto;
   width: 100vw; */
   /* margin-left: 10%; */
-  /* margin-right: 10%; */
+  /* margin-right: 10%; */ 
 }
 
 .box {

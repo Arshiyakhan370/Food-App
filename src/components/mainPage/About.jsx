@@ -1,7 +1,15 @@
 import React, { Fragment } from "react";
 import classes from "./About.module.css";
 import { Link } from "react-router-dom";
+export   const AboutData= [
+  {
+    title: "When Yummy Meets Healthy",
+    item:"Keto is not about dieting. It’s about choosing the best possible food to fuel your body and mind. And of course, pleasure is always part of the mix.At Ketodelia, we're passionate about providing delicious,"
+}];
 
+
+
+       
 const About = () => {
   return (
     <Fragment>
