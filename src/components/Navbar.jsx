@@ -13,7 +13,7 @@ const Navbar = () => {
   const showMenu=useSelector((state)=>state.cartSliceReducer.isShowMenu)
   return (
     <Fragment>
-      <div onClick={(e)=>{e.stopPropagation();dispatch(cartAction.setShowMenu(false))}}  className={classes.headBorder}>
+      <div onClick={(e)=>{e.stopPropagation();dispatch(cartAction.setShowMenu(false))}}  className={classes.headBorder }>
         <p>order now and enjoy instant delivery on orders over $25</p>
       </div>
       <div
