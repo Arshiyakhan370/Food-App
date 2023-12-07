@@ -684,7 +684,7 @@ const MagnifyGlass = () => {
     return () => clearTimeout(id)
   }, [inputValue]);
 
-  const menuPageFiltered = globalata.filter((item) => item.title?.toLocaleLowerCase().includes(searchedVal?.toLocaleLowerCase()) || item.description?.toLocaleLowerCase().includes(searchedVal?.toLocaleLowerCase()));
+  const menuPageFiltered = globalata.filter((item) => item.title?.toLocaleLowerCase().includes(searchedVal?.toLocaleLowerCase().trim()) || item.description?.toLocaleLowerCase().includes(searchedVal?.toLocaleLowerCase().trim()));
 
 
   return (
