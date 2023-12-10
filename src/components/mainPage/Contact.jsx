@@ -1,13 +1,15 @@
 import React, { Fragment } from "react";
 import classes from "./Contact.module.css";
 export  const ContactData=[{
-  title:" Welcome to our Contact Us page! Ketodelia Keto Restaurant is located",
+  title:` Welcome to our Contact Us page! Ketodelia Keto Restaurant is located
+  at<b> 3187 Yonge St, Toronto</b>`,
   description:`If you need to get in touch with us, you have several options
   available. You can give us a call at<b> 416-623-0317</b> and speak with one
   of our friendly staff members. Alternatively, you can use the <b>live
   chat</b> feature located in the bottom right corner of our website. This
   is a great option if you prefer a quick and convenient way to get in
-  touch with us.`
+  touch with us.`,
+  link:"contact"
 }]
 const Contact = () => {
   return (
@@ -18,8 +20,9 @@ const Contact = () => {
           style={{ marginRight: "25%", marginLeft: "25%",marginTop:"5%" }}
         >
           <p>
-            Welcome to our Contact Us page! Ketodelia Keto Restaurant is located
-            at<b> 3187 Yonge St, Toronto</b>
+            {/* Welcome to our Contact Us page! Ketodelia Keto Restaurant is located
+            at<b> 3187 Yonge St, Toronto</b> */}
+            {ContactData[0].title}
           </p>
 
           <p>

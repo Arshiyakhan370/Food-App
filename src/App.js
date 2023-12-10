@@ -26,6 +26,7 @@ import { useDispatch, useSelector } from "react-redux";
 import AddToCart from "./components/AddToCart";
 import { cartAction } from "./store/CartSlice";
 import MagnifyGlass from "./components/MagnifyGlass";
+import MagnifyGlass2 from "./components/MagnifyGlass2";
 
 function App() {
   const dispatch=useDispatch()
@@ -74,7 +75,8 @@ function App() {
           <Route path="/cart"   element={<AddToCart/>} />
           <Route path="/feature"  element={<Page1/>}/>
           <Route path="/auth"  element={<CreateAccount/>}/>
-          <Route path="/magnify" element={<MagnifyGlass/>}/>
+          {/* <Route path="/magnify" element={<MagnifyGlass/>}/> */}
+          <Route path="/magnify" element={<MagnifyGlass2/>}/>
           <Route path="/forget"  element={<ForgetPass/>}/>
           
         </Routes>

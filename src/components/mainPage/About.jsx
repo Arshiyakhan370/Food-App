@@ -5,7 +5,8 @@ export   const AboutData= [
   {
     title: "When Yummy Meets Healthy",
     item:"Keto is not about dieting. It’s about choosing the best possible food to fuel your body and mind. And of course, pleasure is always part of the mix.At Ketodelia, we're passionate about providing delicious,"
-}];
+    ,link:"about"
+  }];
 
 
 

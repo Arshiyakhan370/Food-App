@@ -3,43 +3,48 @@ import classes from "./GiftCard.module.css"
 import { Link } from 'react-router-dom'
 import { useDispatch } from 'react-redux'
 import { cartAction } from '../../store/CartSlice'
-const GiftCard = () => {
-  const dispatch =useDispatch();
-  const giftCardPage= [
+ export const giftCardPage= [
    
-    {
-      id: "a100",
-      img: "https://cdn.shopify.com/s/files/1/0665/2110/4628/products/ValentinesMiniKetoCheesecake.jpg?v=1675898054&width=360",
-      title: " Mini Heart-Shaped Keto Cheesecake: Perfect for Valentine's Day!",
-      description:
-        "Indulge in this Valentine's Day...",
-      price: 40.99,
-    },
-    {
-      id: "a101",
-      img: "https://cdn.shopify.com/s/files/1/0665/2110/4628/products/OrganicTea.jpg?v=1673029444&width=360",
-      title: "  Organic Tea",
-      description:
-        "Indulge in this Valentine's DayElevate your tea time with our eco-friendly, organic blend....",
-      price: 9.99,
-    },
+  {
+    id: "a100",
+    img: "https://cdn.shopify.com/s/files/1/0665/2110/4628/products/ValentinesMiniKetoCheesecake.jpg?v=1675898054&width=360",
+    title: " Mini Heart-Shaped Keto Cheesecake: Perfect for Valentine's Day!",
+    description:
+      "Indulge in this Valentine's Day...",
+    price: 40.99,
+    link:"gift-card"
+  },
+  {
+    id: "a101",
+    img: "https://cdn.shopify.com/s/files/1/0665/2110/4628/products/OrganicTea.jpg?v=1673029444&width=360",
+    title: "  Organic Tea",
+    description:
+      "Indulge in this Valentine's DayElevate your tea time with our eco-friendly, organic blend....",
+    price: 9.99,
+    link:"gift-card"
+  },
 {
- id: "a102",
-      img: "https://cdn.shopify.com/s/files/1/0665/2110/4628/products/Dairy-freeKetoCoffeeCake.jpg?v=1673029345&width=360",
-      title: "Keto Coffee Cake",
-      description:
-        " A delicious and rich coffee cake keto friendly and sugar-free....",
-      price: 11.99,
-    }, 
+id: "a102",
+    img: "https://cdn.shopify.com/s/files/1/0665/2110/4628/products/Dairy-freeKetoCoffeeCake.jpg?v=1673029345&width=360",
+    title: "Keto Coffee Cake",
+    description:
+      " A delicious and rich coffee cake keto friendly and sugar-free....",
+    price: 11.99,
+    link:"gift-card"
+  }, 
 {
 id:"a103",
 img:"https://cdn.shopify.com/s/files/1/0665/2110/4628/products/KetoChocolateCake.jpg?v=1673387538&width=360",
 title:"Keto Chocolate Cake 8”",
 description:
-        " The perfect treat for chocoholics, this Keto Chocolate Cake ....",
-      price: 79.99,
-    }, 
-  ];
+      " The perfect treat for chocoholics, this Keto Chocolate Cake ....",
+    price: 79.99,
+    link:"gift-card"
+  }, 
+];
+const GiftCard = () => {
+  const dispatch =useDispatch();
+
   return (
 <Fragment>
 <section>
@@ -223,28 +228,3 @@ export default GiftCard
 
 
 
-// {/* <div className={classes.textCard}>
-//             <p>
-//             Introducing our versatile Gift Cards, the perfect gift for any food lover in your life. Our Gift Cards can be used towards any menu items at Ketodelia, making it a great gift for birthdays, holidays, or any special occasion.
-
-//  Our Gift Cards are available in various denominations, so you can choose the amount that best suits your budget. They can also be used for dine-in or take-out, giving the recipient the flexibility to enjoy our delicious Keto-friendly food at their convenience.
-
-// {/* Our menu features a wide variety of Keto-friendly options, such as low-carb, high-fat dishes, perfect for those following the ketogenic diet. We have something for everyone, from savory breakfast options to mouthwatering entrees and desserts, all made with the freshest, high-quality ingredients. */}
-
-// {/* Give the gift of delicious, healthy food with our Gift Cards. They are a thoughtful and convenient way to show someone you care. Purchase yours today and share the taste of Keto-friendly food with your loved ones. */} 
-//             </p>
-//             <div>
-//               {"  "}
-//               <svg
-//                 xmlns="http://www.w3.org/2000/svg"
-//                 width="24"
-//                 height="24"
-//                 viewBox="0 0 24 24"
-//                 style={{ fill: "#3D081B", transform: "msFilter" }}
-//               >
-//                 <path d="M5.5 15a3.51 3.51 0 0 0 2.36-.93l6.26 3.58a3.06 3.06 0 0 0-.12.85 3.53 3.53 0 1 0 1.14-2.57l-6.26-3.58a2.74 2.74 0 0 0 .12-.76l6.15-3.52A3.49 3.49 0 1 0 14 5.5a3.35 3.35 0 0 0 .12.85L8.43 9.6A3.5 3.5 0 1 0 5.5 15zm12 2a1.5 1.5 0 1 1-1.5 1.5 1.5 1.5 0 0 1 1.5-1.5zm0-13A1.5 1.5 0 1 1 16 5.5 1.5 1.5 0 0 1 17.5 4zm-12 6A1.5 1.5 0 1 1 4 11.5 1.5 1.5 0 0 1 5.5 10z"></path>
-//               </svg>
-//               {"  "}
-//               Share
-//             </div>
-//           </div> */}

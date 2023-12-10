@@ -22,12 +22,14 @@ import {
 } from './mainPage/Menu';
 import { AboutData } from './mainPage/About';
 import { ContactData } from './mainPage/Contact';
-
+import { giftCardPage } from './mainPage/GiftCard';
+import { hideFaq } from './mainPage/FaqPage';
 const MagnifyGlass = () => {
   const [inputValue, setInputValue] = useState(null);
   const [searchedVal, setsearchedVal] = useState(null);
   const dispatch = useDispatch();
   const isSearch = useSelector((state) => state.isSearch);
+  
 
   const globalData = [
     ...menuPage,
@@ -45,6 +47,8 @@ const MagnifyGlass = () => {
     ...KetoCakes,
     ...AboutData,
     ...ContactData,
+    ...giftCardPage,
+    ...hideFaq,
   ];
 
   useEffect(() => {
@@ -68,7 +72,9 @@ const MagnifyGlass = () => {
       item.title?.toLocaleLowerCase().includes(searchedVal?.toLocaleLowerCase().trim()) ||
       item.description?.toLocaleLowerCase().includes(searchedVal?.toLocaleLowerCase().trim())
   );
-
+const searchHandler=()=>{
+  setsearchedVal(inputValue);
+}
   return (
     <Fragment>
       <form
@@ -84,47 +90,40 @@ const MagnifyGlass = () => {
             aria-label="Search"
             style={{ outline: 'none' }}
             value={inputValue}
-            onChange={(e) => setInputValue(e.target.value)}
+            onChange={(e) =>{ setInputValue(e.target.value)}}
           />
-          <button className="btn btn-outline-success mx-2 my-2 my-sm-0" type="button">
+          <button className="btn btn-outline-success mx-2 my-2 my-sm-0" type="button"onClick={searchHandler}>
             Search
           </button>
         </div>
       </form>
-      <div className={classes.verticalBox}>
-        {inputValue &&
-          menuPageFiltered.map((data) => (
-            <Fragment key={data.id}>
-              {data.type === 'about' ? (
-                <Link
-                  to="/faq"
-                  style={{ textDecoration: 'none' }}
-                >
-                  <div className={`${classes.box}`}>
+      
+
+
+<div className={classes.verticalBox}>
+          {inputValue &&
+            menuPageFiltered.map((data) => {
+              return (
+                <Link to={`/${data.link}`} style={{ textDecoration: "none" }} >
+                  <div className={classes.box}>
                     <div className={classes.card}>
                       <div className={classes.horizontalLayout}>
                         <div className={classes.textSide}>
                           <h6>{data.title}</h6>
                           <p>{data.description}</p>
+                          
                           <span className="review-rating">★★★★★(4)</span>
                           <div>${data.price}</div>
-                          <button
-                            type="button"
-                            className={classes.btn}
-                            onClick={(e) => {
-                              e.stopPropagation();
-                              e.preventDefault();
-                              dispatch(
-                                cartAction.addToCartItem({
-                                  id: data.id,
-                                  imgUrl: data.img,
-                                  title: data.title,
-                                  price: data.price,
-                                  quantity: 1,
-                                })
-                              );
-                            }}
-                          >
+                          <button type='button' className={classes.btn} onClick={(e) => {
+                            e.stopPropagation(); e.preventDefault(); dispatch(cartAction.addToCartItem({
+                              id: data.id,
+                              imgUrl: data.img,
+                              title: data.title,
+                              price: data.price,
+                              quantity: 1,
+
+                            }))
+                          }}>
                             Add to Cart
                           </button>
                         </div>
@@ -134,148 +133,32 @@ const MagnifyGlass = () => {
                       </div>
                     </div>
                   </div>
+                  
                 </Link>
-              ) : data.type === 'menu' ? (
-                <Link
-                  to="/menu"
-                  style={{ textDecoration: 'none' }}
-                >
-                  <div className={`${classes.box}`}>
-                    <div className={classes.card}>
-                      <div className={classes.horizontalLayout}>
-                        <div className={classes.textSide}>
-                          <h6>{data.title}</h6>
-                          <p>{data.description}</p>
-                          <span className="review-rating">★★★★★(4)</span>
-                          <div>${data.price}</div>
-                          <button
-                            type="button"
-                            className={classes.btn}
-                            onClick={(e) => {
-                              e.stopPropagation();
-                              e.preventDefault();
-                              dispatch(
-                                cartAction.addToCartItem({
-                                  id: data.id,
-                                  imgUrl: data.img,
-                                  title: data.title,
-                                  price: data.price,
-                                  quantity: 1,
-                                })
-                              );
-                            }}
-                          >
-                            Add to Cart
-                          </button>
-                        </div>
-                        <div className={classes.imageSide}>
-                          <img src={data.img} alt="Image" />
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </Link>
-              ) : data.type === 'special' ? (
-                <Link
-                  to="/contact"
-                  style={{ textDecoration: 'none' }}
-                >
-                  <div className={`${classes.box}`}>
-                    <div className={classes.card}>
-                      <div className={classes.horizontalLayout}>
-                        <div className={classes.textSide}>
-                          <h6>{data.title}</h6>
-                          <p>{data.description}</p>
-                          <span className="review-rating">★★★★★(4)</span>
-                          <div>${data.price}</div>
-                          <button
-                            type="button"
-                            className={classes.btn}
-                            onClick={(e) => {
-                              e.stopPropagation();
-                              e.preventDefault();
-                              dispatch(
-                                cartAction.addToCartItem({
-                                  id: data.id,
-                                  imgUrl: data.img,
-                                  title: data.title,
-                                  price: data.price,
-                                  quantity: 1,
-                                })
-                              );
-                            }}
-                          >
-                            Add to Cart
-                          </button>
-                        </div>
-                        <div className={classes.imageSide}>
-                          <img src={data.img} alt="Image" />
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </Link>
-              ) : (
-                <Link
-                  to="/about"
-                  style={{ textDecoration: 'none' }}
-                >
-                  <div className={`${classes.box}`}>
-                    <div className={classes.card}>
-                      <div className={classes.horizontalLayout}>
-                        <div className={classes.textSide}>
-                          <h6>{data.title}</h6>
-                          <p>{data.description}</p>
-                          <span className="review-rating">★★★★★(4)</span>
-                          <div>${data.price}</div>
-                          <button
-                            type="button"
-                            className={classes.btn}
-                            onClick={(e) => {
-                              e.stopPropagation();
-                              e.preventDefault();
-                              dispatch(
-                                cartAction.addToCartItem({
-                                  id: data.id,
-                                  imgUrl: data.img,
-                                  title: data.title,
-                                  price: data.price,
-                                  quantity: 1,
-                                })
-                              );
-                            }}
-                          >
-                            Add to Cart
-                          </button>
-                        </div>
-                        <div className={classes.imageSide}>
-                          <img src={data.img} alt="Image" />
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </Link>
-              )}
-            </Fragment>
-          ))}
-        {inputValue && menuPageFiltered.length === 0 && (
-          <div className="container mt-5">
-            <div className="row justify-content-center">
-              <div className="col-md-6 text-center">
-                <h2>Product Not Found</h2>
-                <p>We're sorry, the product you are looking for does not exist.</p>
-                <p>
-                  <Link to="/menu" className="btn btn-primary">
-                    Go Back to Homepage
-                  </Link>
-                </p>
+              )
+            })
+           
+          }
+
+          
+      
+          {/* {
+            inputValue && menuPageFiltered.length === 0 &&
+            <div className="container mt-5">
+              <div className="row justify-content-center">
+                <div className="col-md-6 text-center">
+                  <h2>Product Not Found</h2>
+                  <p>We're sorry, the product you are looking for does not exist.</p>
+                  <p>
+                    <Link to="/menu" className="btn btn-primary">Go Back to Homepage</Link>
+                  </p>
+                </div>
               </div>
             </div>
-          </div>
-        )}
-      </div>
+          } */}
+        </div>
     </Fragment>
-  );
-};
+  )
+}
 
 export default MagnifyGlass;

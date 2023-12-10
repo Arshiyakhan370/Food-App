@@ -14,6 +14,7 @@ export const menuPage1 = [
     description:
       "Crisp, golden bites of pepperoni pizza are a delicious addition...",
     price: 9.99,
+    link:"menu"
   },
   {
     id: "a2",
@@ -22,6 +23,7 @@ export const menuPage1 = [
     description:
       "Six Extra Jumbo Black Tiger Shrimps, layered on crisp cucumber...",
     price: 22.99,
+    link:"menu"
   },
   {
     id: "a3",
@@ -30,6 +32,7 @@ export const menuPage1 = [
     description:
       "Grilled halloumi cheese and organic tomatoes served on ...",
     price: 12.99,
+    link:"menu"
   },
   {
     id: "a4",
@@ -38,6 +41,7 @@ export const menuPage1 = [
     description:
       "7 air-fried organic farm chicken wings with a side of celery sticks....",
     price: 19.99,
+    link:"menu"
   },
   {
     id: "a5",
